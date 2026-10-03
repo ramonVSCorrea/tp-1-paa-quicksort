@@ -2,6 +2,8 @@
 
 > 🎓 Trabalho prático de **Projeto e Análise de Algoritmos (PAA)**: comparação entre Quicksort recursivo, Quicksort híbrido e Quicksort híbrido com mediana-de-três.
 
+**Alunos:** Ian Pereira Pinto Bomfim · João Miguel de Abreu Constâncio · Ramon Vinícius Silva Corrêa
+
 O projeto executa as três versões sobre as **mesmas massas de dados**, mede tempo e operações, seleciona empiricamente o parâmetro `M` e exporta os resultados em arquivos de texto e CSV para análise posterior.
 
 **☕ Tecnologia:** Java 17+ · **🔧 Build:** Maven ou `javac` · **📦 Dependências externas:** nenhuma no código-fonte
@@ -178,4 +180,4 @@ O terminal arredonda os tempos para **três casas decimais em milissegundos**. S
 <a id="escopo-da-entrega"></a>
 ## 📚 Escopo da entrega
 
-Este repositório contém o **código e os testes do experimento**. O relatório em **LaTeX/Overleaf** — com referencial teórico, tabelas, gráficos, análise crítica, conclusão e referências — e os links entregues no **Canvas** são partes separadas do trabalho; **não são gerados automaticamente** por este programa.
+Este repositório contém o **código, os testes e os arquivos gerados pelo experimento**. O [relatório no Overleaf](https://www.overleaf.com/read/gtjvwsdwthbf#6c921e) apresenta o referencial teórico, as tabelas, os gráficos, a análise crítica, a conclusão e as referências. O relatório e os links entregues no **Canvas** são partes separadas do trabalho; **não são gerados automaticamente** por este programa.
