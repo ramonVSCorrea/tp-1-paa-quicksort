@@ -1,0 +1,112 @@
+tipo;tamanho;algoritmo;tempo_medio_ns;comparacoes_medias;trocas_movimentos_medios;sucesso
+Aleatorio;100;Quicksort Recursivo;144140;595;244;true
+Aleatorio;100;Quicksort Hibrido (M=15);31180;636;416;true
+Aleatorio;100;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);77960;640;414;true
+Aleatorio;500;Quicksort Recursivo;116900;4690;1904;true
+Aleatorio;500;Quicksort Hibrido (M=15);239980;4940;2764;true
+Aleatorio;500;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);128380;4579;3037;true
+Aleatorio;1000;Quicksort Recursivo;275580;10481;5473;true
+Aleatorio;1000;Quicksort Hibrido (M=15);119220;10972;7091;true
+Aleatorio;1000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);212360;10373;6913;true
+Aleatorio;2000;Quicksort Recursivo;160820;24672;11016;true
+Aleatorio;2000;Quicksort Hibrido (M=15);194180;25389;14163;true
+Aleatorio;2000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);460560;22929;13199;true
+Aleatorio;5000;Quicksort Recursivo;527940;70861;32696;true
+Aleatorio;5000;Quicksort Hibrido (M=15);576040;73162;41103;true
+Aleatorio;5000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);996940;65611;36987;true
+Aleatorio;10000;Quicksort Recursivo;1140240;156852;78558;true
+Aleatorio;10000;Quicksort Hibrido (M=15);1045100;161474;94932;true
+Aleatorio;10000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);1104360;141037;80757;true
+Aleatorio;20000;Quicksort Recursivo;2428600;338200;152928;true
+Aleatorio;20000;Quicksort Hibrido (M=15);2238880;347730;186977;true
+Aleatorio;20000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);2178200;303752;175539;true
+Aleatorio;50000;Quicksort Recursivo;6168100;924915;429238;true
+Aleatorio;50000;Quicksort Hibrido (M=15);5653680;947781;512177;true
+Aleatorio;50000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);5966800;834841;467162;true
+Aleatorio;100000;Quicksort Recursivo;14458020;1943232;883375;true
+Aleatorio;100000;Quicksort Hibrido (M=15);14294480;1988771;1049788;true
+Aleatorio;100000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);11115440;1799683;1003896;true
+Ordenado;100;Quicksort Recursivo;14120;4950;0;true
+Ordenado;100;Quicksort Hibrido (M=15);17080;4872;0;true
+Ordenado;100;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);1960;395;14;true
+Ordenado;500;Quicksort Recursivo;326520;124750;0;true
+Ordenado;500;Quicksort Hibrido (M=15);366160;124672;0;true
+Ordenado;500;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);10860;3288;104;true
+Ordenado;1000;Quicksort Recursivo;1216440;499500;0;true
+Ordenado;1000;Quicksort Hibrido (M=15);1212180;499422;0;true
+Ordenado;1000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);22260;7557;208;true
+Ordenado;2000;Quicksort Recursivo;4689860;1999000;0;true
+Ordenado;2000;Quicksort Hibrido (M=15);5430400;1998922;0;true
+Ordenado;2000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);158740;17094;416;true
+Ordenado;5000;Quicksort Recursivo;22595080;12497500;0;true
+Ordenado;5000;Quicksort Hibrido (M=15);23178180;12497422;0;true
+Ordenado;5000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);127800;49497;1022;true
+Ordenado;10000;Quicksort Recursivo;93186660;49995000;0;true
+Ordenado;10000;Quicksort Hibrido (M=15);83499340;49994922;0;true
+Ordenado;10000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);231220;108986;2046;true
+Ordenado Inverso;100;Quicksort Recursivo;9600;4950;50;true
+Ordenado Inverso;100;Quicksort Hibrido (M=15);7580;4950;147;true
+Ordenado Inverso;100;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);4660;878;567;true
+Ordenado Inverso;500;Quicksort Recursivo;124580;124750;250;true
+Ordenado Inverso;500;Quicksort Hibrido (M=15);172940;124750;347;true
+Ordenado Inverso;500;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);11300;7281;4398;true
+Ordenado Inverso;1000;Quicksort Recursivo;521400;499500;500;true
+Ordenado Inverso;1000;Quicksort Hibrido (M=15);638260;499500;597;true
+Ordenado Inverso;1000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);24940;16783;9622;true
+Ordenado Inverso;2000;Quicksort Recursivo;2037720;1999000;1000;true
+Ordenado Inverso;2000;Quicksort Hibrido (M=15);2824860;1999000;1097;true
+Ordenado Inverso;2000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);67200;38105;21021;true
+Ordenado Inverso;5000;Quicksort Recursivo;14270060;12497500;2500;true
+Ordenado Inverso;5000;Quicksort Hibrido (M=15);17921680;12497500;2597;true
+Ordenado Inverso;5000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);154480;109138;55627;true
+Ordenado Inverso;10000;Quicksort Recursivo;60294220;49995000;5000;true
+Ordenado Inverso;10000;Quicksort Hibrido (M=15);65137620;49995000;5097;true
+Ordenado Inverso;10000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);613800;240720;119730;true
+Muitos Duplicados;100;Quicksort Recursivo;2060;749;175;true
+Muitos Duplicados;100;Quicksort Hibrido (M=15);2020;456;175;true
+Muitos Duplicados;100;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);2280;493;172;true
+Muitos Duplicados;500;Quicksort Recursivo;30540;5768;1835;true
+Muitos Duplicados;500;Quicksort Hibrido (M=15);9020;4372;1961;true
+Muitos Duplicados;500;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);7840;3883;2092;true
+Muitos Duplicados;1000;Quicksort Recursivo;36460;14135;6033;true
+Muitos Duplicados;1000;Quicksort Hibrido (M=15);34700;11363;6164;true
+Muitos Duplicados;1000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);37600;10182;4999;true
+Muitos Duplicados;2000;Quicksort Recursivo;188800;30732;8928;true
+Muitos Duplicados;2000;Quicksort Hibrido (M=15);78380;25016;9131;true
+Muitos Duplicados;2000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);73040;21355;8893;true
+Muitos Duplicados;5000;Quicksort Recursivo;435800;83425;27640;true
+Muitos Duplicados;5000;Quicksort Hibrido (M=15);257960;69296;28579;true
+Muitos Duplicados;5000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);237560;65824;30992;true
+Muitos Duplicados;10000;Quicksort Recursivo;827680;167611;60102;true
+Muitos Duplicados;10000;Quicksort Hibrido (M=15);710220;139666;62072;true
+Muitos Duplicados;10000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);581580;144327;61848;true
+Muitos Duplicados;20000;Quicksort Recursivo;1562560;376521;152134;true
+Muitos Duplicados;20000;Quicksort Hibrido (M=15);1364380;320318;156037;true
+Muitos Duplicados;20000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);1157400;296273;142461;true
+Muitos Duplicados;50000;Quicksort Recursivo;5142880;1008325;367209;true
+Muitos Duplicados;50000;Quicksort Hibrido (M=15);4380760;867115;375556;true
+Muitos Duplicados;50000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);3761420;776512;340456;true
+Muitos Duplicados;100000;Quicksort Recursivo;8979560;2240874;884921;true
+Muitos Duplicados;100000;Quicksort Hibrido (M=15);8040220;1960416;903629;true
+Muitos Duplicados;100000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);8110220;1706146;829248;true
+Pior Caso;100;Quicksort Recursivo;10500;4950;0;true
+Pior Caso;100;Quicksort Hibrido (M=15);8200;4872;0;true
+Pior Caso;100;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);1280;395;14;true
+Pior Caso;500;Quicksort Recursivo;145540;124750;0;true
+Pior Caso;500;Quicksort Hibrido (M=15);281360;124672;0;true
+Pior Caso;500;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);10040;3288;104;true
+Pior Caso;1000;Quicksort Recursivo;567780;499500;0;true
+Pior Caso;1000;Quicksort Hibrido (M=15);777660;499422;0;true
+Pior Caso;1000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);15320;7557;208;true
+Pior Caso;2000;Quicksort Recursivo;2429540;1999000;0;true
+Pior Caso;2000;Quicksort Hibrido (M=15);3537260;1998922;0;true
+Pior Caso;2000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);35780;17094;416;true
+Pior Caso;5000;Quicksort Recursivo;16925740;12497500;0;true
+Pior Caso;5000;Quicksort Hibrido (M=15);25462180;12497422;0;true
+Pior Caso;5000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);112240;49497;1022;true
+Pior Caso;10000;Quicksort Recursivo;68964280;49995000;0;true
+Pior Caso;10000;Quicksort Hibrido (M=15);82974440;49994922;0;true
+Pior Caso;10000;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);233300;108986;2046;true
+Pior Caso;200;Quicksort Recursivo;23520;19900;0;true
+Pior Caso;200;Quicksort Hibrido (M=15);30920;19822;0;true
+Pior Caso;200;Quicksort Hibrido Melhorado (M=15, Mediana-de-3);2400;988;30;true

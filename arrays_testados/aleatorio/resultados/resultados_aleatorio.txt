@@ -1,0 +1,28 @@
+RESULTADOS DOS TESTES: Aleatorio
+Quicksort Recursivo | Aleatorio | Tamanho: 100 | Tempo: 0,14 ms | Comp: 595 | Trocas: 244 | Sucesso: true
+Quicksort Hibrido (M=15) | Aleatorio | Tamanho: 100 | Tempo: 0,03 ms | Comp: 636 | Trocas: 416 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Aleatorio | Tamanho: 100 | Tempo: 0,08 ms | Comp: 640 | Trocas: 414 | Sucesso: true
+Quicksort Recursivo | Aleatorio | Tamanho: 500 | Tempo: 0,12 ms | Comp: 4690 | Trocas: 1904 | Sucesso: true
+Quicksort Hibrido (M=15) | Aleatorio | Tamanho: 500 | Tempo: 0,24 ms | Comp: 4940 | Trocas: 2764 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Aleatorio | Tamanho: 500 | Tempo: 0,13 ms | Comp: 4579 | Trocas: 3037 | Sucesso: true
+Quicksort Recursivo | Aleatorio | Tamanho: 1000 | Tempo: 0,28 ms | Comp: 10481 | Trocas: 5473 | Sucesso: true
+Quicksort Hibrido (M=15) | Aleatorio | Tamanho: 1000 | Tempo: 0,12 ms | Comp: 10972 | Trocas: 7091 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Aleatorio | Tamanho: 1000 | Tempo: 0,21 ms | Comp: 10373 | Trocas: 6913 | Sucesso: true
+Quicksort Recursivo | Aleatorio | Tamanho: 2000 | Tempo: 0,16 ms | Comp: 24672 | Trocas: 11016 | Sucesso: true
+Quicksort Hibrido (M=15) | Aleatorio | Tamanho: 2000 | Tempo: 0,19 ms | Comp: 25389 | Trocas: 14163 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Aleatorio | Tamanho: 2000 | Tempo: 0,46 ms | Comp: 22929 | Trocas: 13199 | Sucesso: true
+Quicksort Recursivo | Aleatorio | Tamanho: 5000 | Tempo: 0,53 ms | Comp: 70861 | Trocas: 32696 | Sucesso: true
+Quicksort Hibrido (M=15) | Aleatorio | Tamanho: 5000 | Tempo: 0,58 ms | Comp: 73162 | Trocas: 41103 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Aleatorio | Tamanho: 5000 | Tempo: 1,00 ms | Comp: 65611 | Trocas: 36987 | Sucesso: true
+Quicksort Recursivo | Aleatorio | Tamanho: 10000 | Tempo: 1,14 ms | Comp: 156852 | Trocas: 78558 | Sucesso: true
+Quicksort Hibrido (M=15) | Aleatorio | Tamanho: 10000 | Tempo: 1,05 ms | Comp: 161474 | Trocas: 94932 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Aleatorio | Tamanho: 10000 | Tempo: 1,10 ms | Comp: 141037 | Trocas: 80757 | Sucesso: true
+Quicksort Recursivo | Aleatorio | Tamanho: 20000 | Tempo: 2,43 ms | Comp: 338200 | Trocas: 152928 | Sucesso: true
+Quicksort Hibrido (M=15) | Aleatorio | Tamanho: 20000 | Tempo: 2,24 ms | Comp: 347730 | Trocas: 186977 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Aleatorio | Tamanho: 20000 | Tempo: 2,18 ms | Comp: 303752 | Trocas: 175539 | Sucesso: true
+Quicksort Recursivo | Aleatorio | Tamanho: 50000 | Tempo: 6,17 ms | Comp: 924915 | Trocas: 429238 | Sucesso: true
+Quicksort Hibrido (M=15) | Aleatorio | Tamanho: 50000 | Tempo: 5,65 ms | Comp: 947781 | Trocas: 512177 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Aleatorio | Tamanho: 50000 | Tempo: 5,97 ms | Comp: 834841 | Trocas: 467162 | Sucesso: true
+Quicksort Recursivo | Aleatorio | Tamanho: 100000 | Tempo: 14,46 ms | Comp: 1943232 | Trocas: 883375 | Sucesso: true
+Quicksort Hibrido (M=15) | Aleatorio | Tamanho: 100000 | Tempo: 14,29 ms | Comp: 1988771 | Trocas: 1049788 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Aleatorio | Tamanho: 100000 | Tempo: 11,12 ms | Comp: 1799683 | Trocas: 1003896 | Sucesso: true

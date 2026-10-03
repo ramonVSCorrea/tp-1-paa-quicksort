@@ -1,0 +1,28 @@
+RESULTADOS DOS TESTES: Muitos Duplicados
+Quicksort Recursivo | Muitos Duplicados | Tamanho: 100 | Tempo: 0,00 ms | Comp: 749 | Trocas: 175 | Sucesso: true
+Quicksort Hibrido (M=15) | Muitos Duplicados | Tamanho: 100 | Tempo: 0,00 ms | Comp: 456 | Trocas: 175 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Muitos Duplicados | Tamanho: 100 | Tempo: 0,00 ms | Comp: 493 | Trocas: 172 | Sucesso: true
+Quicksort Recursivo | Muitos Duplicados | Tamanho: 500 | Tempo: 0,03 ms | Comp: 5768 | Trocas: 1835 | Sucesso: true
+Quicksort Hibrido (M=15) | Muitos Duplicados | Tamanho: 500 | Tempo: 0,01 ms | Comp: 4372 | Trocas: 1961 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Muitos Duplicados | Tamanho: 500 | Tempo: 0,01 ms | Comp: 3883 | Trocas: 2092 | Sucesso: true
+Quicksort Recursivo | Muitos Duplicados | Tamanho: 1000 | Tempo: 0,04 ms | Comp: 14135 | Trocas: 6033 | Sucesso: true
+Quicksort Hibrido (M=15) | Muitos Duplicados | Tamanho: 1000 | Tempo: 0,03 ms | Comp: 11363 | Trocas: 6164 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Muitos Duplicados | Tamanho: 1000 | Tempo: 0,04 ms | Comp: 10182 | Trocas: 4999 | Sucesso: true
+Quicksort Recursivo | Muitos Duplicados | Tamanho: 2000 | Tempo: 0,19 ms | Comp: 30732 | Trocas: 8928 | Sucesso: true
+Quicksort Hibrido (M=15) | Muitos Duplicados | Tamanho: 2000 | Tempo: 0,08 ms | Comp: 25016 | Trocas: 9131 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Muitos Duplicados | Tamanho: 2000 | Tempo: 0,07 ms | Comp: 21355 | Trocas: 8893 | Sucesso: true
+Quicksort Recursivo | Muitos Duplicados | Tamanho: 5000 | Tempo: 0,44 ms | Comp: 83425 | Trocas: 27640 | Sucesso: true
+Quicksort Hibrido (M=15) | Muitos Duplicados | Tamanho: 5000 | Tempo: 0,26 ms | Comp: 69296 | Trocas: 28579 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Muitos Duplicados | Tamanho: 5000 | Tempo: 0,24 ms | Comp: 65824 | Trocas: 30992 | Sucesso: true
+Quicksort Recursivo | Muitos Duplicados | Tamanho: 10000 | Tempo: 0,83 ms | Comp: 167611 | Trocas: 60102 | Sucesso: true
+Quicksort Hibrido (M=15) | Muitos Duplicados | Tamanho: 10000 | Tempo: 0,71 ms | Comp: 139666 | Trocas: 62072 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Muitos Duplicados | Tamanho: 10000 | Tempo: 0,58 ms | Comp: 144327 | Trocas: 61848 | Sucesso: true
+Quicksort Recursivo | Muitos Duplicados | Tamanho: 20000 | Tempo: 1,56 ms | Comp: 376521 | Trocas: 152134 | Sucesso: true
+Quicksort Hibrido (M=15) | Muitos Duplicados | Tamanho: 20000 | Tempo: 1,36 ms | Comp: 320318 | Trocas: 156037 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Muitos Duplicados | Tamanho: 20000 | Tempo: 1,16 ms | Comp: 296273 | Trocas: 142461 | Sucesso: true
+Quicksort Recursivo | Muitos Duplicados | Tamanho: 50000 | Tempo: 5,14 ms | Comp: 1008325 | Trocas: 367209 | Sucesso: true
+Quicksort Hibrido (M=15) | Muitos Duplicados | Tamanho: 50000 | Tempo: 4,38 ms | Comp: 867115 | Trocas: 375556 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Muitos Duplicados | Tamanho: 50000 | Tempo: 3,76 ms | Comp: 776512 | Trocas: 340456 | Sucesso: true
+Quicksort Recursivo | Muitos Duplicados | Tamanho: 100000 | Tempo: 8,98 ms | Comp: 2240874 | Trocas: 884921 | Sucesso: true
+Quicksort Hibrido (M=15) | Muitos Duplicados | Tamanho: 100000 | Tempo: 8,04 ms | Comp: 1960416 | Trocas: 903629 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Muitos Duplicados | Tamanho: 100000 | Tempo: 8,11 ms | Comp: 1706146 | Trocas: 829248 | Sucesso: true

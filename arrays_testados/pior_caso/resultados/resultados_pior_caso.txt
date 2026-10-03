@@ -1,0 +1,19 @@
+RESULTADOS DOS TESTES: Pior Caso
+Quicksort Recursivo | Pior Caso | Tamanho: 100 | Tempo: 0,01 ms | Comp: 4950 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido (M=15) | Pior Caso | Tamanho: 100 | Tempo: 0,01 ms | Comp: 4872 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Pior Caso | Tamanho: 100 | Tempo: 0,00 ms | Comp: 395 | Trocas: 14 | Sucesso: true
+Quicksort Recursivo | Pior Caso | Tamanho: 500 | Tempo: 0,15 ms | Comp: 124750 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido (M=15) | Pior Caso | Tamanho: 500 | Tempo: 0,28 ms | Comp: 124672 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Pior Caso | Tamanho: 500 | Tempo: 0,01 ms | Comp: 3288 | Trocas: 104 | Sucesso: true
+Quicksort Recursivo | Pior Caso | Tamanho: 1000 | Tempo: 0,57 ms | Comp: 499500 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido (M=15) | Pior Caso | Tamanho: 1000 | Tempo: 0,78 ms | Comp: 499422 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Pior Caso | Tamanho: 1000 | Tempo: 0,02 ms | Comp: 7557 | Trocas: 208 | Sucesso: true
+Quicksort Recursivo | Pior Caso | Tamanho: 2000 | Tempo: 2,43 ms | Comp: 1999000 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido (M=15) | Pior Caso | Tamanho: 2000 | Tempo: 3,54 ms | Comp: 1998922 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Pior Caso | Tamanho: 2000 | Tempo: 0,04 ms | Comp: 17094 | Trocas: 416 | Sucesso: true
+Quicksort Recursivo | Pior Caso | Tamanho: 5000 | Tempo: 16,93 ms | Comp: 12497500 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido (M=15) | Pior Caso | Tamanho: 5000 | Tempo: 25,46 ms | Comp: 12497422 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Pior Caso | Tamanho: 5000 | Tempo: 0,11 ms | Comp: 49497 | Trocas: 1022 | Sucesso: true
+Quicksort Recursivo | Pior Caso | Tamanho: 10000 | Tempo: 68,96 ms | Comp: 49995000 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido (M=15) | Pior Caso | Tamanho: 10000 | Tempo: 82,97 ms | Comp: 49994922 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Pior Caso | Tamanho: 10000 | Tempo: 0,23 ms | Comp: 108986 | Trocas: 2046 | Sucesso: true

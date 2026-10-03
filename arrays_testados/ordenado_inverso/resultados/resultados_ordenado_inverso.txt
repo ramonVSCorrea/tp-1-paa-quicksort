@@ -1,0 +1,19 @@
+RESULTADOS DOS TESTES: Ordenado Inverso
+Quicksort Recursivo | Ordenado Inverso | Tamanho: 100 | Tempo: 0,01 ms | Comp: 4950 | Trocas: 50 | Sucesso: true
+Quicksort Hibrido (M=15) | Ordenado Inverso | Tamanho: 100 | Tempo: 0,01 ms | Comp: 4950 | Trocas: 147 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Ordenado Inverso | Tamanho: 100 | Tempo: 0,00 ms | Comp: 878 | Trocas: 567 | Sucesso: true
+Quicksort Recursivo | Ordenado Inverso | Tamanho: 500 | Tempo: 0,12 ms | Comp: 124750 | Trocas: 250 | Sucesso: true
+Quicksort Hibrido (M=15) | Ordenado Inverso | Tamanho: 500 | Tempo: 0,17 ms | Comp: 124750 | Trocas: 347 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Ordenado Inverso | Tamanho: 500 | Tempo: 0,01 ms | Comp: 7281 | Trocas: 4398 | Sucesso: true
+Quicksort Recursivo | Ordenado Inverso | Tamanho: 1000 | Tempo: 0,52 ms | Comp: 499500 | Trocas: 500 | Sucesso: true
+Quicksort Hibrido (M=15) | Ordenado Inverso | Tamanho: 1000 | Tempo: 0,64 ms | Comp: 499500 | Trocas: 597 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Ordenado Inverso | Tamanho: 1000 | Tempo: 0,02 ms | Comp: 16783 | Trocas: 9622 | Sucesso: true
+Quicksort Recursivo | Ordenado Inverso | Tamanho: 2000 | Tempo: 2,04 ms | Comp: 1999000 | Trocas: 1000 | Sucesso: true
+Quicksort Hibrido (M=15) | Ordenado Inverso | Tamanho: 2000 | Tempo: 2,82 ms | Comp: 1999000 | Trocas: 1097 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Ordenado Inverso | Tamanho: 2000 | Tempo: 0,07 ms | Comp: 38105 | Trocas: 21021 | Sucesso: true
+Quicksort Recursivo | Ordenado Inverso | Tamanho: 5000 | Tempo: 14,27 ms | Comp: 12497500 | Trocas: 2500 | Sucesso: true
+Quicksort Hibrido (M=15) | Ordenado Inverso | Tamanho: 5000 | Tempo: 17,92 ms | Comp: 12497500 | Trocas: 2597 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Ordenado Inverso | Tamanho: 5000 | Tempo: 0,15 ms | Comp: 109138 | Trocas: 55627 | Sucesso: true
+Quicksort Recursivo | Ordenado Inverso | Tamanho: 10000 | Tempo: 60,29 ms | Comp: 49995000 | Trocas: 5000 | Sucesso: true
+Quicksort Hibrido (M=15) | Ordenado Inverso | Tamanho: 10000 | Tempo: 65,14 ms | Comp: 49995000 | Trocas: 5097 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Ordenado Inverso | Tamanho: 10000 | Tempo: 0,61 ms | Comp: 240720 | Trocas: 119730 | Sucesso: true

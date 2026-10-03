@@ -140,7 +140,7 @@ arrays_testados/
 └── pior_caso/                Inclui a análise adicional de 200 elementos
 ```
 
-As pastas dos cinco cenários seguem a mesma organização interna. Os CSV usam **ponto e vírgula (`;`)** como separador e apresentam o tempo em **nanossegundos**; para obter milissegundos, divida o valor por `1.000.000`. A pasta de saída é ignorada pelo Git: **execute o programa para gerar resultados na sua máquina**.
+As pastas dos cinco cenários seguem a mesma organização interna. Os CSV usam **ponto e vírgula (`;`)** como separador e apresentam o tempo em **nanossegundos**; para obter milissegundos, divida o valor por `1.000.000`. Os arquivos de `arrays_testados/` podem ser versionados como registro da execução; **execute o programa novamente se quiser gerar resultados na sua máquina**, pois os tempos podem variar.
 
 <a id="estrutura-do-projeto"></a>
 ## 🏗️ Estrutura do projeto

@@ -1,5 +1,4 @@
 target/
-arrays_testados/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/

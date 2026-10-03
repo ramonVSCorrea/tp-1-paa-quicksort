@@ -1,0 +1,4 @@
+RESULTADOS DOS TESTES: Analise_Pior_Caso
+Quicksort Recursivo | Pior Caso | Tamanho: 200 | Tempo: 0,02 ms | Comp: 19900 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido (M=15) | Pior Caso | Tamanho: 200 | Tempo: 0,03 ms | Comp: 19822 | Trocas: 0 | Sucesso: true
+Quicksort Hibrido Melhorado (M=15, Mediana-de-3) | Pior Caso | Tamanho: 200 | Tempo: 0,00 ms | Comp: 988 | Trocas: 30 | Sucesso: true
