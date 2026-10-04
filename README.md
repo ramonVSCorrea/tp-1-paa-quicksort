@@ -46,14 +46,23 @@ O `M` utilizado nas duas versões híbridas é escolhido com testes da versão h
 
 Execute os comandos **na raiz do projeto**, onde está o `pom.xml`. É necessário ter o **JDK 17 ou superior**; o Maven é opcional.
 
-### 🔧 Com Maven
+No Windows, verifique se o JDK está disponível com `javac -version`. Se não estiver instalado, execute no **CMD**:
 
-```bash
-mvn compile
-mvn exec:java -Dexec.mainClass=paa.sort.Main
+```cmd
+winget install --id EclipseAdoptium.Temurin.17.JDK -e --source winget
 ```
 
-> 💡 **Dica:** a primeira execução pode baixar plugins do Maven. O projeto não depende de um projeto-pai externo.
+Depois da instalação, **feche e abra novamente o CMD** para atualizar o `PATH` e confirme com `javac -version` (deve indicar a versão 17 ou superior).
+
+### 🪟 Sem Maven — Prompt de Comando (CMD, Windows)
+
+Abra o CMD na raiz do projeto e execute:
+
+```cmd
+if not exist target\classes mkdir target\classes
+javac -encoding UTF-8 -d target\classes -sourcepath src\main\java src\main\java\paa\sort\Main.java
+java -cp target\classes paa.sort.Main
+```
 
 ### 🪟 Sem Maven — PowerShell (Windows)
 
@@ -63,6 +72,15 @@ javac -encoding UTF-8 -d target/classes -sourcepath src/main/java src/main/java/
 java -cp target/classes paa.sort.Main
 ```
 
+### 🔧 Com Maven
+
+```bash
+mvn compile
+mvn exec:java -Dexec.mainClass=paa.sort.Main
+```
+
+> 💡 **Dica:** a primeira execução pode baixar plugins do Maven. O projeto não depende de um projeto-pai externo.
+
 O programa imprime o `M` selecionado e **uma tabela por cenário**: cada linha representa um tamanho, as três colunas centrais mostram os tempos médios (ms), e a última indica a versão com menor tempo. Os nomes foram abreviados apenas no terminal: `Recursivo`, `Hibrido` e `Mediana-3`. As comparações e trocas/movimentos continuam disponíveis em `arrays_testados/resultados.csv` e nos arquivos de texto. Os arquivos são salvos em [`arrays_testados/`](#arquivos-gerados), criada automaticamente.
 
 <a id="como-executar-os-testes"></a>
@@ -70,10 +88,12 @@ O programa imprime o `M` selecionado e **uma tabela por cenário**: cada linha r
 
 Após compilar o programa com um dos métodos acima:
 
-```powershell
+```text
 javac -encoding UTF-8 -cp target/classes -d target/classes src/test/java/paa/sort/SortRegressionTest.java
 java -cp target/classes paa.sort.SortRegressionTest
 ```
+
+Os comandos de teste também funcionam no **CMD** (as barras `/` nos caminhos são aceitas pelo Java no Windows).
 
 Os testes de regressão **não exigem JUnit**. Eles verificam a ordenação em entradas pequenas e variadas, os cinco tipos de massa, diferentes valores de `M`, a preservação do vetor original, a rejeição de uma implementação incorreta e a quantidade de comparações do pior caso explícito.
 
