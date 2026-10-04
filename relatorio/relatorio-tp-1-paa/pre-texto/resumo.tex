@@ -1,0 +1,7 @@
+\begin{resumo}
+\vspace{-1cm}
+\onehalfspacing
+Este relatório compara três implementações de Quicksort em Java: recursiva com pivô final, híbrida com Insertion Sort em subvetores pequenos e híbrida com seleção de pivô por mediana-de-três. O limiar $M$ foi calibrado sobre 1.000 valores aleatórios; as versões foram avaliadas com massas aleatórias, crescentes, inversas e com muitos valores repetidos, além de um cenário explícito de pior caso. Para cada configuração houve aquecimento e cinco medições de tempo, comparações e trocas/movimentos. Os resultados registrados selecionaram $M=15$. Em 10.000 valores crescentes, o Quicksort recursivo realizou 49.995.000 comparações, contra 108.986 da versão com mediana-de-três. Em 100.000 valores aleatórios, esta última registrou 11,115 ms contra 14,458 ms da versão recursiva. A escolha da mediana melhora fortemente as entradas ordenadas examinadas, mas não assegura melhora em todas as massas nem elimina o pior caso teórico.
+\par\vspace*{.75cm}
+\noindent \textbf{Palavras-chave:} Quicksort. Insertion Sort. Mediana-de-três. Análise experimental.
+\end{resumo}

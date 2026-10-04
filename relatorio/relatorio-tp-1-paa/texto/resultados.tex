@@ -1,0 +1,59 @@
+\chapter{Resultados e análise}
+\label{cap:resultados}
+
+Os resultados a seguir provêm exclusivamente da execução registrada em \path{arrays_testados/resultados.csv} do projeto atual. Nas tabelas, R designa o Quicksort recursivo, H o híbrido de pivô final e M3 o híbrido com mediana-de-três; ambos os híbridos aqui usam $M=15$. Os gráficos mostram os mesmos pontos das tabelas, sem interpolação de novos ensaios. Tempos em ms são as médias inteiras em ns divididas por $10^6$; não se combinam resultados de outra implementação, execução ou limiar com este estudo.
+
+\section{Calibração de $M$}
+\begin{table}[htbp]
+\centering
+\caption{Calibração do limiar em 1.000 valores aleatórios}
+\label{tab:calibracao}
+\begin{tabular}{r r@{\qquad}r r}
+\hline
+$M$ & Tempo (ms) & $M$ & Tempo (ms) \\
+\hline
+5 & 0,29645 & 10 & 0,15002 \\
+\textbf{15} & \textbf{0,10650} & 20 & 0,11819 \\
+25 & 0,11801 & 30 & 0,13542 \\
+40 & 0,12882 & 50 & 0,13828 \\
+75 & 0,24992 & 100 & 0,29775 \\
+\hline
+\end{tabular}
+\par\smallskip\footnotesize Fonte: \path{arrays_testados/calibracao_m.csv}.
+\end{table}
+
+O menor tempo observado foi 0,10650 ms, em $M=15$. Em relação a $M=5$, a diferença registrada é de aproximadamente 64\%; em relação a $M=20$, de cerca de 10\%. Aumentar $M$ evita mais partições pequenas, mas amplia o custo do Insertion Sort dentro de cada bloco, proporcional ao quadrado do tamanho local. A calibração é uma seleção empírica para uma massa de 1.000 elementos, \emph{não} uma prova de que 15 seja ótimo para todas as entradas ou máquinas. Aplicar exatamente o mesmo limiar a H e M3 permite avaliar separadamente o efeito da escolha do pivô.
+
+\section{Resultados completos por cenário}
+
+O arquivo \texttt{texto/resultados\_detalhados.tex} contém, para cada um dos cinco cenários, tabelas e gráficos separados de tempo, comparações e trocas/movimentos. Foram incluídos \emph{todos} os tamanhos exportados: 100 a 100.000 nos dois cenários maiores; 100 a 10.000 nos demais; o pior caso contém ainda 200. Os eixos logarítmicos em tempo e comparações permitem distinguir séries com diferenças de várias ordens de grandeza; os gráficos de movimento mantêm eixo vertical linear para representar corretamente as contagens zero.
+
+\input{texto/resultados_detalhados}
+
+\section{Síntese quantitativa e limites da comparação}
+
+A Tabela~\ref{tab:panorama10000} põe as três versões lado a lado sob o mesmo tamanho, para facilitar a leitura transversal entre as seções detalhadas. O cenário adverso crescente foi executado separadamente e aparece novamente na última linha; valores iguais de contadores entre essas duas linhas são esperados, mas tempos iguais não são exigidos.
+
+\begin{table}[htbp]
+\centering
+\caption{Panorama dos tempos médios para $n=10.000$ (ms; menor valor observado em negrito)}
+\label{tab:panorama10000}
+\begin{tabular}{l r r r}
+\hline
+Cenário & R & H & M3 \\
+\hline
+Aleatório & 1,14024 & \textbf{1,04510} & 1,10436 \\
+Crescente & 93,18666 & 83,49934 & \textbf{0,23122} \\
+Decrescente & 60,29422 & 65,13762 & \textbf{0,61380} \\
+Muitos duplicados & 0,82768 & 0,71022 & \textbf{0,58158} \\
+Pior caso (crescente) & 68,96428 & 82,97444 & \textbf{0,23330} \\
+\hline
+\end{tabular}
+\par\smallskip\footnotesize Fonte: \path{arrays_testados/resultados.csv}; menor tempo apenas nesta execução.\normalsize
+\end{table}
+
+As diferenças de escala são mais informativas do que a simples posição de primeiro lugar: na crescente de 10.000 elementos, R levou aproximadamente 403 vezes o tempo de M3, enquanto em aleatório o menor tempo observado de H supera o de M3 por apenas cerca de 0,059 ms. Não se deve atribuir certeza à última diferença sem medições de dispersão. No inverso, o bom tempo de M3 convive com 119.730 trocas/movimentos contra 5.000 de R: contar movimentações isoladamente não é suficiente para predizer duração. O ensaio com duplicatas mostra que essa vantagem também não decorre de uma solução completa para valores iguais; a partição permanece de duas vias.
+
+No tamanho de 10.000, a mediana-de-três reduz as comparações em dados crescentes de 49.995.000 (R) para 108.986 (M3), fator de aproximadamente 459. Em dados inversos, a redução é para 240.720, fator de aproximadamente 208, embora M3 faça mais movimentações. O híbrido de pivô final permanece quadrático nessas duas entradas; o corte em $M=15$ altera apenas as partições finais. No pior caso explícito de 10.000, R faz 49.995.000 comparações, H faz 49.994.922 e M3 faz 108.986; a identidade entre este caso e a massa crescente explica as contagens iguais, enquanto os tempos distintos são medições realizadas em momentos diferentes.
+
+Em 100.000 valores aleatórios, M3 tem 11,11544 ms, aproximadamente 23\% menos que R (14,45802 ms), mas em 50.000 o menor tempo é de H (5,65368 ms, contra 5,96680 ms de M3). Em 100.000 valores repetidos, M3 contabiliza menos comparações que H (1.706.146 contra 1.960.416), mas leva 8,11022 ms contra 8,04022 ms. Essas inversões são compatíveis com diferenças entre métricas e variação temporal. A ausência de desvio padrão, intervalo de confiança e controle da carga do sistema impede alegar significância estatística. Finalmente, a massa de repetidos tem até $n/10$ chaves possíveis: não equivale ao vetor de chaves todas iguais, que poderia degenerar a partição de duas vias nas três versões.

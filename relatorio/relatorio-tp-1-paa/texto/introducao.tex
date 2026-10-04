@@ -1,0 +1,10 @@
+\chapter{Introdução}
+\label{intro}
+
+A ordenação de dados é uma etapa recorrente em buscas, processamento de registros e preparação de informações para outros algoritmos. O Quicksort combina partições sucessivas e execução rápida em muitas entradas, mas sua eficiência depende da escolha do pivô e da distribuição dos valores. Em particular, uma implementação que escolhe sempre o último elemento pode sofrer degradação quadrática em vetores já ordenados \cite{cormen2012,gfg_quick}.
+
+Este trabalho investiga como duas alterações práticas afetam essa implementação: interromper a recursão em subvetores pequenos e ordená-los por inserção; e escolher o pivô pela mediana do primeiro, do elemento central e do último. O objetivo é comparar o Quicksort recursivo, o híbrido e o híbrido com mediana-de-três em tempo médio, comparações de valores e trocas/movimentos, usando massas idênticas de dados aleatórios, crescentes, decrescentes e com duplicatas. Um cenário crescente identifica explicitamente o pior caso da escolha do pivô final.
+
+As perguntas que orientam a comparação são: em quais entradas interromper a partição melhora o tempo sem alterar a estratégia de pivô; em quais entradas a mediana-de-três evita a degradação observada com pivô final; e até que ponto as contagens de operações ajudam a explicar diferenças de tempo? O estudo distingue uma melhora \emph{observada} numa execução de uma garantia de complexidade para todas as entradas. Seu escopo é a implementação instrumentada em Java e as massas efetivamente geradas, não uma comparação de bibliotecas de ordenação nem uma prova de superioridade universal.
+
+O Capítulo~\ref{cap:desenvolvimento} apresenta o referencial teórico; o Capítulo~\ref{cap:metodologia} detalha o protocolo de medição. O Capítulo~\ref{cap:algoritmos} analisa os algoritmos e suas condições de custo; o Capítulo~\ref{cap:resultados} apresenta os dados exportados pelo projeto e sua interpretação. O Capítulo~\ref{cap:conclusao} sintetiza as conclusões e limitações.

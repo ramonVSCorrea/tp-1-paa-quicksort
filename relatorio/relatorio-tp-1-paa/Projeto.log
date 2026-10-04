@@ -1,0 +1,1252 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.9.27)  3 OCT 2026 20:19
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./Projeto.tex
+(Projeto.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+(abnt_pucmg_utf8.cls (cvs-id.def)
+
+LaTeX Warning: You have requested document class `abnt_pucmg_utf8',
+               but the document class provides `abnt'.
+
+Document Class: abnt 2004/11/02 v1.27.2.1 Classe abnt (NBR6024, NBR6027, NBR602
+8, NBR14724)
+
+LaTeX Warning: You have requested document class `abnt_pucmg_utf8',
+               but the document class provides `abnt'.
+
+Document Class: abnt 
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.st
+y
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.s
+ty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count275
+\calc@Bcount=\count276
+\calc@Adimen=\dimen148
+\calc@Bdimen=\dimen149
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count277
+\calc@Cskip=\skip51
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.
+sty
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
+\c@tracingmulticols=\count278
+\mult@box=\box53
+\multicol@leftmargin=\dimen150
+\c@unbalance=\count279
+\c@collectmore=\count280
+\doublecol@number=\count281
+\multicoltolerance=\count282
+\multicolpretolerance=\count283
+\full@width=\dimen151
+\page@free=\dimen152
+\premulticols=\dimen153
+\postmulticols=\dimen154
+\multicolsep=\skip52
+\multicolbaselineskip=\skip53
+\partial@page=\box54
+\last@line=\box55
+\mc@boxedresult=\box56
+\maxbalancingoverflow=\dimen155
+\mult@rightbox=\box57
+\mult@grightbox=\box58
+\mult@firstbox=\box59
+\mult@gfirstbox=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\c@minrows=\count284
+\c@columnbadness=\count285
+\c@finalcolumnbadness=\count286
+\last@try=\dimen156
+\multicolovershoot=\dimen157
+\multicolundershoot=\dimen158
+\mult@nat@firstbox=\box97
+\colbreak@box=\box98
+\mc@col@check@num=\count287
+\g__mc_curr_col_int=\count288
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count289
+\c@chapter=\count290
+\c@section=\count291
+\c@subsection=\count292
+\c@subsubsection=\count293
+\c@paragraph=\count294
+\c@subparagraph=\count295
+\c@figure=\count296
+\c@table=\count297
+\abovecaptionskip=\skip54
+\belowcaptionskip=\skip55
+\bibindent=\dimen159
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspa
+ce.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+\ABNTanapindent=\skip56
+\ABNTsignwidth=\skip57
+\ABNTsignthickness=\skip58
+\ABNTsignskip=\skip59
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfir
+st.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+))
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geomet
+ry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval
+.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.
+sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.s
+ty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count298
+\Gm@cntv=\count299
+\c@Gm@tempcnt=\count300
+\Gm@bindingoffset=\dimen160
+\Gm@wd@mp=\dimen161
+\Gm@odd@mp=\dimen162
+\Gm@even@mp=\dimen163
+\Gm@layoutwidth=\dimen164
+\Gm@layoutheight=\dimen165
+\Gm@layouthoffset=\dimen166
+\Gm@layoutvoffset=\dimen167
+\Gm@dimlist=\toks20
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geomet
+ry.cfg))
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperr
+ef.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvset
+keys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\
+kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdf
+escape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcm
+ds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pd
+ftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\inf
+warerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor
+.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\namere
+f.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcou
+nt.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestrin
+g\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvopt
+ions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count301
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolb
+ox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count302
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\str
+ingenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen168
+\Hy@linkcounter=\count303
+\Hy@pagecounter=\count304
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc
+.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intca
+lc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count305
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.
+def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count306
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen169
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset
+.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bi
+gintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count307
+\Field@Width=\dimen170
+\Fld@charsize=\dimen171
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Hy@abspage=\count308
+\c@Item=\count309
+\c@Hfootnote=\count310
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdfte
+x.def
+File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
+\Fld@listcount=\count311
+\c@bookmark@seq@number=\count312
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\
+rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter
+\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip60
+) (acronym.sty
+Package: acronym 2009/01/25 v1.34 Support for acronyms (Tobias Oetiker)
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/bigfoot\suffix.
+sty
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+\AC@clearlist=\toks21
+) (abntcite.sty (cvs-id.def)
+Package: abntcite 2003/10/13 v1.26 Chamadas de referencias no texto (NBR10520)
+ (abntex-abrev.sty (cvs-id.def)
+Package: abntex-abrev 2005/11/14 v1.4 Abreviacoes
+
+(nbr10522-1988.def (cvs-id.def)
+File: nbr10522-1988.def 2003/10/13 v1.2 Abreviacoes bibliograficas (NBR10522:19
+88)
+) (abntex-abrev-pt_BR.def (cvs-id.def)
+File: abntex-abrev-pt_BR.def 2005/11/14 v1.3 definicao de abntex-abrev, traduca
+o de termos en_US/pt_BR
+))
+(nbr10520-2002.def (cvs-id.def)
+File: nbr10520-2002.def 2003/10/13 v1.2 Definicoes para abntcite (NBR10520:2002
+)
+)
+\minimumbiblabelwidth=\skip61
+\ABCIauxlen=\skip62
+\c@ABCIaux=\count313
+\c@ABCImax=\count314
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize
+.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\biblabelsep=\skip63
+LaTeX Info: Redefining \newblock on input line 562.
+LaTeX Info: Redefining \cite on input line 589.
+\ABCItoken=\toks22
+) (abnt-PPGInf-PUCMG.sty (cvs-id.def)
+Package: abnt-PPGInf-PUCMG 2009/10/05 v0.1
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.s
+ty
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
+TeX and XeLaTeX
+\babel@savecnt=\count315
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2101.
+\U@D=\dimen172
+\l@unhyphenated=\language79
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabe
+l.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count316
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4196.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.c
+fg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/
+invalid\babel-brazil.tex)
+
+Package babel Warning: Name 'brazil' is deprecated.
+(babel)                Use 'brazilian' instead.
+(babel)                Reported on input line 4320.
+
+Package babel Info: Importing font and identification data for brazil
+(babel)             from babel-pt-BR.ini. Reported on input line 4320.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\
+brazilian.ldf
+Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
+Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
+(babel)             (\language56). Reported on input line 100.
+Package babel Info: Making " an active character on input line 132.
+))
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box99
+\UL@hyphenbox=\box100
+\UL@skip=\skip64
+\UL@hook=\toks23
+\UL@height=\dimen173
+\UL@pe=\count317
+\UL@pixel=\dimen174
+\ULC@box=\box101
+Package: ulem 2019/11/18
+\ULdepth=\dimen175
+))
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphi
+cx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphi
+cs.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.s
+ty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\gr
+aphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pd
+ftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen176
+\Gin@req@width=\dimen177
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count318
+\float@exts=\toks24
+\float@box=\box102
+\@float@everytoks=\toks25
+\@floatcapt=\box103
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath
+.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip65
+
+For additional information on amsmath, use the `?' option.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext
+.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.
+sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks26
+\ex@=\dimen178
+))
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.
+sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen179
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.
+sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count319
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count320
+\leftroot@=\count321
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count322
+\DOTSCASE@=\count323
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box104
+\strutbox@=\box105
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen180
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count324
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count325
+\dotsspace@=\muskip18
+\c@parentequation=\count326
+\dspbrk@lvl=\count327
+\tag@help=\toks27
+\row@=\count328
+\column@=\count329
+\maxfields@=\count330
+\andhelp@=\toks28
+\eqnshift@=\dimen181
+\alignsep@=\dimen182
+\tagshift@=\dimen183
+\tagwidth@=\dimen184
+\totwidth@=\dimen185
+\lineht@=\dimen186
+\@envbody=\toks29
+\multlinegap=\skip66
+\multlinetaggap=\skip67
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.s
+ty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\co
+lor.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathco
+lor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssym
+b.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfon
+ts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/listings\listin
+gs.sty
+\lst@mode=\count331
+\lst@gtempboxa=\box106
+\lst@token=\toks31
+\lst@length=\count332
+\lst@currlwidth=\dimen187
+\lst@column=\count333
+\lst@pos=\count334
+\lst@lostspace=\dimen188
+\lst@width=\dimen189
+\lst@newlines=\count335
+\lst@lineno=\count336
+\lst@maxwidth=\dimen190
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpat
+ch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmis
+c.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count337
+\lst@skipnumbers=\count338
+\lst@framebox=\box107
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/listings\listin
+gs.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption
+.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption
+3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen191
+\captionmargin=\dimen192
+\caption@leftmargin=\dimen193
+\caption@rightmargin=\dimen194
+\caption@width=\dimen195
+\caption@indent=\dimen196
+\caption@parindent=\dimen197
+\caption@hangindent=\dimen198
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = macro:#1#2->\vskip \abovecaptionskip \sbo
+x \@tempboxa {\small #1: #2}\ifdim \wd \@tempboxa >\hsize {\small #1: #2\par } 
+\else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempboxa \hfil }\fi 
+\vskip \belowcaptionskip  on input line 1175.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count339
+\c@continuedfloat=\count340
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+Package caption Info: Option `figurewithin=none' requires the `newfloat' packag
+e on input line 68.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/newfloat\newflo
+at.sty
+Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
+Package newfloat Info: Unsupported document class, or \@chapter 
+(newfloat)             was already redefined by another package.
+Package newfloat Info: \@chapter = macro:->\def \Hy@next {\Hy@MakeCurrentHrefAu
+to {\Hy@chapapp *}\Hy@raisedlink {\hyper@anchorstart {\@currentHref }\hyper@anc
+horend }}\ifnum \c@secnumdepth >\m@ne \@ifundefined {if@mainmatter}\iftrue {\cs
+name if@mainmatter\endcsname }\let \Hy@next \relax \fi \fi \Hy@next \Hy@org@cha
+pter .
+Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@cha
+pter [{#1}]{#2}.
+Package newfloat Info: \algocf@original@chapter = undefined.
+)
+\@float@every@grafico=\toks32
+\c@grafico=\count341
+
+\citation{abnt-etal-cite=1}
+\citation{abnt-and-type=e}
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 10
+0.
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3bac
+kend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count342
+) (Projeto.aux
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 12.
+ (pre-texto/resumo.aux) (pre-texto/abstract.aux)
+(texto/introducao.aux) (texto/desenvolvimento.aux) (texto/metodologia.aux)
+(texto/analise_algoritmos.aux) (texto/resultados.aux) (texto/conclusao.aux))
+\openout1 = `Projeto.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-34.14322pt
+* \headheight=12.0pt
+* \headsep=22.14322pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=85.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 100.
+(Projeto.out) (Projeto.out)
+\@outlinefile=\write3
+\openout3 = `Projeto.out'.
+
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\sup
+p-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count343
+\scratchdimen=\dimen199
+\scratchbox=\box108
+\nofMPsegments=\count344
+\nofMParguments=\count345
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count346
+\MPscratchDim=\dimen256
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
+\everyMPtoPDFconversion=\toks34
+)
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\ep
+stopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstop
+df-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@lstlisting=\count349
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package newfloat Info: Trying Plan B...
+Package newfloat Info: `float' package detected.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+61.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+61.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+161.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+161.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 161.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 161.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 161.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 161
+.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.f
+d
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 161
+.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.f
+d
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{C:/Users/Ramon Corrêa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Us
+ers/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.166 \folhaderosto
+                    [1]
+\openout2 = `pre-texto/resumo.aux'.
+
+ (pre-texto/resumo.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.7 \end{resumo}
+                 [3
+
+
+
+{C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
+hit.enc}{C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
+m/lm-rm.enc}])
+\openout2 = `pre-texto/abstract.aux'.
+
+ (pre-texto/abstract.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8 \end{abstract}
+                   [4
+
+
+
+
+
+]) (Projeto.lot)
+\tf@lot=\write4
+\openout4 = `Projeto.lot'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \listof{grafico}{Lista de Gráficos}
+                                           [5
+
+
+
+] (Projeto.loq)
+\tf@loq=\write5
+\openout5 = `Projeto.loq'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.245 \tableofcontents
+                       [6
+
+] (Projeto.toc
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.28 ...ld}Pior caso explícito}}{25}{section.5.7}
+                                                  % [7
+
+])
+\tf@toc=\write6
+\openout6 = `Projeto.toc'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.245 \tableofcontents
+                       [8]
+\openout2 = `texto/introducao.aux'.
+
+ (texto/introducao.tex
+Cap\'{\i }tulo 1.
+) [1
+
+
+
+]
+\openout2 = `texto/desenvolvimento.aux'.
+
+ (texto/desenvolvimento.tex
+Cap\'{\i }tulo 2.
+[2
+
+
+
+
+{C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
+hex.enc}{C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
+m/lm-mathsy.enc}])
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
+ [3]
+[4]
+\openout2 = `texto/metodologia.aux'.
+
+ (texto/metodologia.tex
+Cap\'{\i }tulo 3.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
+.
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]\T1/lmr/m/n/12 Repeti��o de cha-ves com at�
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5
+
+
+
+
+]
+[6]
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
+ [7]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
+7.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+[8{C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-t
+s1.enc}]
+\openout2 = `texto/analise_algoritmos.aux'.
+
+ (texto/analise_algoritmos.tex
+Cap\'{\i }tulo 4.
+
+(C:\Users\Ramon Corrêa\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlan
+g1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 10.
+ [9
+
+
+
+
+] [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+[12]) [13]
+\openout2 = `texto/resultados.aux'.
+
+ (texto/resultados.tex
+Cap\'{\i }tulo 5.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 6.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 6.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 22.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 22.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 22.
+[14
+
+
+
+
+] (texto/resultados_detalhados.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 10.
+<graficos/aleatorio_tempo.pdf, id=448, 343.5535pt x 144.004pt>
+File: graficos/aleatorio_tempo.pdf Graphic file (type pdf)
+<use graficos/aleatorio_tempo.pdf>
+Package pdftex.def Info: graficos/aleatorio_tempo.pdf  used on input line 29.
+(pdftex.def)             Requested size: 375.96417pt x 157.59846pt.
+Package hyperref Info: bookmark level for unknown grafico defaults to 0 on inpu
+t line 30.
+<graficos/aleatorio_comparacoes.pdf, id=449, 336.60956pt x 144.004pt>
+File: graficos/aleatorio_comparacoes.pdf Graphic file (type pdf)
+<use graficos/aleatorio_comparacoes.pdf>
+Package pdftex.def Info: graficos/aleatorio_comparacoes.pdf  used on input line
+ 57.
+(pdftex.def)             Requested size: 375.96417pt x 160.8461pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./graficos/aleatorio_tempo.pdf>]
+<graficos/aleatorio_movimentos.pdf, id=491, 336.17897pt x 155.03621pt>
+File: graficos/aleatorio_movimentos.pdf Graphic file (type pdf)
+<use graficos/aleatorio_movimentos.pdf>
+Package pdftex.def Info: graficos/aleatorio_movimentos.pdf  used on input line 
+85.
+(pdftex.def)             Requested size: 375.96417pt x 173.39334pt.
+ (texto/analise_aleatorio.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <./graficos/aleatorio_comparacoes.pdf>])
+<graficos/ordenado_tempo.pdf, id=517, 343.55452pt x 143.99799pt>
+File: graficos/ordenado_tempo.pdf Graphic file (type pdf)
+<use graficos/ordenado_tempo.pdf>
+Package pdftex.def Info: graficos/ordenado_tempo.pdf  used on input line 114.
+(pdftex.def)             Requested size: 375.96417pt x 157.59187pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <./graficos/aleatorio_movimentos.pdf>]
+<graficos/ordenado_comparacoes.pdf, id=556, 336.60956pt x 143.99998pt>
+File: graficos/ordenado_comparacoes.pdf Graphic file (type pdf)
+<use graficos/ordenado_comparacoes.pdf>
+Package pdftex.def Info: graficos/ordenado_comparacoes.pdf  used on input line 
+139.
+(pdftex.def)             Requested size: 375.96417pt x 160.84163pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <./graficos/ordenado_tempo.pdf>]
+<graficos/ordenado_movimentos.pdf, id=586, 345.42953pt x 143.99898pt>
+File: graficos/ordenado_movimentos.pdf Graphic file (type pdf)
+<use graficos/ordenado_movimentos.pdf>
+Package pdftex.def Info: graficos/ordenado_movimentos.pdf  used on input line 1
+64.
+(pdftex.def)             Requested size: 375.96417pt x 156.73602pt.
+ (texto/analise_ordenado.tex)
+Underfull \vbox (badness 7344) has occurred while \output is active []
+
+ [19 <./graficos/ordenado_comparacoes.pdf> <./graficos/ordenado_movimentos.pdf>
+]
+<graficos/inverso_tempo.pdf, id=637, 343.55452pt x 145.85994pt>
+File: graficos/inverso_tempo.pdf Graphic file (type pdf)
+<use graficos/inverso_tempo.pdf>
+Package pdftex.def Info: graficos/inverso_tempo.pdf  used on input line 193.
+(pdftex.def)             Requested size: 375.96417pt x 159.62961pt.
+<graficos/inverso_comparacoes.pdf, id=638, 336.60956pt x 147.57133pt>
+File: graficos/inverso_comparacoes.pdf Graphic file (type pdf)
+<use graficos/inverso_comparacoes.pdf>
+Package pdftex.def Info: graficos/inverso_comparacoes.pdf  used on input line 2
+18.
+(pdftex.def)             Requested size: 375.96417pt x 164.83066pt.
+ [20 <./graficos/inverso_tempo.pdf>]
+<graficos/inverso_movimentos.pdf, id=668, 336.17897pt x 155.03621pt>
+File: graficos/inverso_movimentos.pdf Graphic file (type pdf)
+<use graficos/inverso_movimentos.pdf>
+Package pdftex.def Info: graficos/inverso_movimentos.pdf  used on input line 24
+3.
+(pdftex.def)             Requested size: 375.96417pt x 173.39334pt.
+ (texto/analise_inverso.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./graficos/inverso_comparacoes.pdf>])
+<graficos/duplicados_tempo.pdf, id=694, 343.5535pt x 143.99898pt>
+File: graficos/duplicados_tempo.pdf Graphic file (type pdf)
+<use graficos/duplicados_tempo.pdf>
+Package pdftex.def Info: graficos/duplicados_tempo.pdf  used on input line 275.
+
+(pdftex.def)             Requested size: 375.96417pt x 157.59296pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <./graficos/inverso_movimentos.pdf>]
+<graficos/duplicados_comparacoes.pdf, id=728, 336.60956pt x 143.99898pt>
+File: graficos/duplicados_comparacoes.pdf Graphic file (type pdf)
+<use graficos/duplicados_comparacoes.pdf>
+Package pdftex.def Info: graficos/duplicados_comparacoes.pdf  used on input lin
+e 303.
+(pdftex.def)             Requested size: 375.96417pt x 160.84048pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <./graficos/duplicados_tempo.pdf>]
+<graficos/duplicados_movimentos.pdf, id=759, 328.98509pt x 155.04526pt>
+File: graficos/duplicados_movimentos.pdf Graphic file (type pdf)
+<use graficos/duplicados_movimentos.pdf>
+Package pdftex.def Info: graficos/duplicados_movimentos.pdf  used on input line
+ 331.
+(pdftex.def)             Requested size: 375.96417pt x 177.19344pt.
+ (texto/analise_duplicados.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./graficos/duplicados_comparacoes.pdf>])
+<graficos/pior_tempo.pdf, id=785, 343.55452pt x 143.99998pt>
+File: graficos/pior_tempo.pdf Graphic file (type pdf)
+<use graficos/pior_tempo.pdf>
+Package pdftex.def Info: graficos/pior_tempo.pdf  used on input line 361.
+(pdftex.def)             Requested size: 375.96417pt x 157.59407pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <./graficos/duplicados_movimentos.pdf>]
+<graficos/pior_comparacoes.pdf, id=815, 336.60956pt x 143.99998pt>
+File: graficos/pior_comparacoes.pdf Graphic file (type pdf)
+<use graficos/pior_comparacoes.pdf>
+Package pdftex.def Info: graficos/pior_comparacoes.pdf  used on input line 387.
+
+(pdftex.def)             Requested size: 375.96417pt x 160.84163pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26 <./graficos/pior_tempo.pdf>]
+<graficos/pior_movimentos.pdf, id=845, 345.42953pt x 143.99898pt>
+File: graficos/pior_movimentos.pdf Graphic file (type pdf)
+<use graficos/pior_movimentos.pdf>
+Package pdftex.def Info: graficos/pior_movimentos.pdf  used on input line 413.
+(pdftex.def)             Requested size: 375.96417pt x 156.73602pt.
+ (texto/analise_pior.tex))
+Underfull \vbox (badness 3724) has occurred while \output is active []
+
+ [27 <./graficos/pior_comparacoes.pdf> <./graficos/pior_movimentos.pdf>] [28]) 
+[29]
+\openout2 = `texto/conclusao.aux'.
+
+
+(texto/conclusao.tex
+Cap\'{\i }tulo 6.
+[30
+
+
+
+
+]) [31] (Projeto.bbl)
++-------------------------------------------------------------------+
+| Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
+|                  http://abntex.codigolivre.org.br                 |
++-------------------------------------------------------------------+
+[32
+
+
+
+] (Projeto.aux (pre-texto/resumo.aux) (pre-texto/abstract.aux)
+(texto/introducao.aux) (texto/desenvolvimento.aux) (texto/metodologia.aux)
+(texto/analise_algoritmos.aux) (texto/resultados.aux) (texto/conclusao.aux))
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+ ***********
+Package rerunfilecheck Info: File `Projeto.out' has not changed.
+(rerunfilecheck)             Checksum: 6A8492299139FF7F8A5A3E54C4016499;6586.
+ ) 
+Here is how much of TeX's memory you used:
+ 17463 strings out of 467871
+ 286314 string characters out of 5414468
+ 979700 words of memory out of 5000000
+ 45800 multiletter control sequences out of 15000+600000
+ 709267 words of font info for 104 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,12n,79p,1143b,2119s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
+mbx12.pfb><C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/lm/lmbxi10.pfb><C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/lm/lmcsc10.pfb><C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Ramon Corrêa/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Ramon Corrêa/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Ramon Corrêa/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Ramon Corr
+êa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Ram
+on Corrêa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Us
+ers/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.p
+fb><C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
+lmr10.pfb><C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/lm/lmr12.pfb><C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/lm/lmr6.pfb><C:/Users/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/lm/lmr8.pfb><C:/Users/Ramon Corrêa/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/Ramon Corrêa/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Ramon Corrêa/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Ramon Corrêa/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Ramon Corrê
+a/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/Ramon
+ Corrêa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Use
+rs/Ramon Corrêa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb
+>
+Output written on Projeto.pdf (40 pages, 659194 bytes).
+PDF statistics:
+ 1047 PDF objects out of 1200 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
+ 340 words of extra memory for PDF output out of 10000 (max. 10000000)
+

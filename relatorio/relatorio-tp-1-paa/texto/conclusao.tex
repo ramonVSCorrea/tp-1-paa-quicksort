@@ -1,0 +1,16 @@
+\chapter{Conclusão}
+\label{cap:conclusao}
+
+\section{Síntese dos resultados}
+
+Foram examinadas três implementações de Quicksort sobre cinco cenários e 37 combinações de tipo/tamanho, com três aquecimentos e cinco medições por versão, perfazendo 111 médias registradas. A calibração isolada do híbrido de pivô final escolheu $M=15$ entre dez candidatos; o mesmo limiar foi empregado na versão com mediana-de-três. A instrumentação permite relacionar o tempo às comparações e às trocas/movimentos, desde que as movimentações de Insertion Sort não sejam confundidas com trocas de pares de índices.
+
+As entradas crescentes e decrescentes expuseram o custo quadrático das versões com pivô final: para $n=10.000$, ambas realizaram aproximadamente 50 milhões de comparações. A hibridização isolada praticamente não alterou essa contagem no vetor crescente; pela condição $n<M$, reduziu-a em apenas 78 unidades. A mediana-de-três reduziu as comparações a 108.986 nesse vetor e a 240.720 no inverso, mostrando a vantagem de evitar os pivôs extremos dessas entradas específicas. Os contadores do caso crescente repetido como \emph{pior caso explícito} coincidem com o primeiro, confirmando que é uma repetição controlada, não uma construção adversa diferente.
+
+\section{Conclusões e possibilidades de extensão}
+
+Em dados aleatórios e repetidos, a vantagem em tempo não foi uniforme. M3 foi a opção mais rápida entre as três em 100.000 valores aleatórios, porém H venceu M3 em 50.000 aleatórios e por pequena margem em 100.000 repetidos. Portanto, \textbf{não há um algoritmo mais rápido em todas as entradas medidas}; nem a mediana-de-três elimina o pior caso teórico quando a partição em duas vias encontra chaves iguais. O valor $M=15$ descreve o menor tempo de uma calibração específica, não uma constante universal.
+
+Em termos práticos, o estudo sustenta usar a mediana-de-três quando se deseja reduzir a sensibilidade desta implementação às entradas crescentes e decrescentes examinadas; não sustenta afirmar que ela elimina os piores casos nem que o corte por inserção, sozinho, corrige um pivô adverso. O benefício do híbrido depende da relação entre o custo das partições evitadas e o custo da inserção local. Por isso, a escolha do limiar deve ser relatada com a massa e o procedimento que a produziram, e diferenças temporais pequenas devem ser interpretadas como observações, não como garantias para outra máquina.
+
+O número reduzido de medições, a ausência de variância, as diferenças de massa conforme $n$ e a falta de controle das condições de carga restringem as conclusões temporais a esta execução. Como trabalhos futuros, recomendam-se repetições com múltiplas sementes, estatísticas de dispersão, randomização da ordem de medição e avaliação de partição ternária para duplicatas. Pode-se também comparar um limite de profundidade com fallback para um algoritmo de pior caso $O(n\log n)$, deixando explícito que essa técnica \emph{não} está presente no código avaliado.

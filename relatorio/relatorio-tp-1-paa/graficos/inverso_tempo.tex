@@ -1,0 +1,18 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[width=12cm,height=5.5cm,xmode=log,ymode=log,xlabel={Tamanho $n$},ylabel={Tempo (ms)},grid=major,legend pos=north west,legend style={font=\small},tick label style={font=\small}]
+\addplot+[mark=*] coordinates {(100,0.0096000) (500,0.1245800) (1000,0.5214000) (2000,2.0377200) (5000,14.2700600) (10000,60.2942200)};
+\addlegendentry{R}
+\addplot+[mark=square*] coordinates {(100,0.0075800) (500,0.1729400) (1000,0.6382600) (2000,2.8248600) (5000,17.9216800) (10000,65.1376200)};
+\addlegendentry{H}
+\addplot+[mark=triangle*] coordinates {(100,0.0046600) (500,0.0113000) (1000,0.0249400) (2000,0.0672000) (5000,0.1544800) (10000,0.6138000)};
+\addlegendentry{M3}
+\end{axis}
+\end{tikzpicture}
+\end{document}

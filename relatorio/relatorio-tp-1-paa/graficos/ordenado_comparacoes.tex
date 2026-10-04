@@ -1,0 +1,18 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[width=12cm,height=5.5cm,xmode=log,ymode=log,xlabel={Tamanho $n$},ylabel={Comparações},grid=major,legend pos=north west,legend style={font=\small},tick label style={font=\small}]
+\addplot+[mark=*] coordinates {(100,4950) (500,124750) (1000,499500) (2000,1999000) (5000,12497500) (10000,49995000)};
+\addlegendentry{R}
+\addplot+[mark=square*] coordinates {(100,4872) (500,124672) (1000,499422) (2000,1998922) (5000,12497422) (10000,49994922)};
+\addlegendentry{H}
+\addplot+[mark=triangle*] coordinates {(100,395) (500,3288) (1000,7557) (2000,17094) (5000,49497) (10000,108986)};
+\addlegendentry{M3}
+\end{axis}
+\end{tikzpicture}
+\end{document}

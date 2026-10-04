@@ -1,0 +1,18 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[width=12cm,height=5.5cm,xmode=log,xlabel={Tamanho $n$},ylabel={Trocas/mov.},grid=major,legend pos=north west,legend style={font=\small},tick label style={font=\small}]
+\addplot+[mark=*] coordinates {(100,175) (500,1835) (1000,6033) (2000,8928) (5000,27640) (10000,60102) (20000,152134) (50000,367209) (100000,884921)};
+\addlegendentry{R}
+\addplot+[mark=square*] coordinates {(100,175) (500,1961) (1000,6164) (2000,9131) (5000,28579) (10000,62072) (20000,156037) (50000,375556) (100000,903629)};
+\addlegendentry{H}
+\addplot+[mark=triangle*] coordinates {(100,172) (500,2092) (1000,4999) (2000,8893) (5000,30992) (10000,61848) (20000,142461) (50000,340456) (100000,829248)};
+\addlegendentry{M3}
+\end{axis}
+\end{tikzpicture}
+\end{document}

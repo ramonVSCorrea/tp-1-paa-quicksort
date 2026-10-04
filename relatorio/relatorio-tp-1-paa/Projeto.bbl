@@ -1,0 +1,46 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v<VERSION> }
+
+\bibitem[Cormen et al. 2012]{cormen2012}
+\abntrefinfo{Cormen et al.}{CORMEN et al.}{2012}
+{CORMEN, T.~H. et al. \emph{Algoritmos: teoria e prática}. 3. ed. São Paulo:
+  GEN LTC, 2012. E-book. ISBN 9788595158092.}
+
+\bibitem[{GeeksforGeeks} 2026]{gfg_insertion}
+\abntrefinfo{{GeeksforGeeks}}{{GeeksforGeeks}}{2026a}
+{{GeeksforGeeks}. \emph{Insertion Sort Algorithm}. 2026.
+Disponível em:
+  \url{https://www.geeksforgeeks.org/dsa/insertion-sort-algorithm/}. Acesso em:
+  19 set. 2026.}
+
+\bibitem[{GeeksforGeeks} 2026]{gfg_quick}
+\abntrefinfo{{GeeksforGeeks}}{{GeeksforGeeks}}{2026b}
+{{GeeksforGeeks}. \emph{Quick Sort}. 2026.
+Disponível em: \url{https://www.geeksforgeeks.org/dsa/quick-sort-algorithm/}.
+  Acesso em: 19 set. 2026.}
+
+\bibitem[{GeeksforGeeks} 2026]{gfg_insertion_complexity}
+\abntrefinfo{{GeeksforGeeks}}{{GeeksforGeeks}}{2026c}
+{{GeeksforGeeks}. \emph{Time Complexity and Space Analysis of Insertion Sort}.
+  2026.
+Disponível em:
+  \url{https://www.geeksforgeeks.org/dsa/time-and-space-complexity-of-insertion-sort-algorithm/}.
+  Acesso em: 19 set. 2026.}
+
+\bibitem[{Oracle} 2021]{oracle2021}
+\abntrefinfo{{Oracle}}{{Oracle}}{2021}
+{{Oracle}. \emph{Java Platform, Standard Edition 17 API Specification}. 2021.
+Disponível em: \url{https://docs.oracle.com/en/java/javase/17/docs/api/}.
+  Acesso em: 19 set. 2026.}
+
+\bibitem[Ziviani 2011]{ziviani2011}
+\abntrefinfo{Ziviani}{ZIVIANI}{2011}
+{ZIVIANI, N. \emph{Projeto de algoritmos com implementações em Pascal e C}.
+  3. ed. São Paulo: Cengage Learning, 2011. Edição revista e ampliada.
+  E-book. ISBN 9788522126590.}
+
+\end{thebibliography}

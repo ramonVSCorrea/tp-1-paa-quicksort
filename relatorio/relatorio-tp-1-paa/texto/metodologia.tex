@@ -1,0 +1,61 @@
+\chapter{Metodologia}
+\label{cap:metodologia}
+
+\section{Implementação e massas de teste}
+
+O código estudado foi implementado em Java 17, no projeto \texttt{tp-1-paa-quicksort}. As três versões retornam um clone do vetor de entrada. A versão recursiva e a híbrida usam partição de Lomuto com pivô no último índice; a versão melhorada ordena os três candidatos (primeiro, meio e último), move a mediana para o fim e usa a mesma partição. Nas versões híbridas, segmentos com \emph{menos} de $M$ elementos são ordenados diretamente por Insertion Sort. O mesmo $M$ é usado nas duas versões, de modo que apenas a seleção do pivô muda entre elas.
+
+O gerador pseudoaleatório Java usa semente 42. Para a massa aleatória, sorteia inteiros em $[0,10n)$; para muitos duplicados, em $[0,\max(1,\lfloor n/10\rfloor))$. Vetores crescentes contêm $0,1,\ldots,n-1$ e os inversos contêm essa sequência revertida. O cenário denominado \emph{pior caso} repete exatamente a massa crescente, mas identifica explicitamente o efeito do pivô final inadequado. O estado do gerador é avançado ao longo dos cenários e tamanhos; a semente permite reproduzir a sequência ao executar o estudo completo.
+
+As massas aleatória e com muitos duplicados têm nove tamanhos: 100, 500, 1.000, 2.000, 5.000, 10.000, 20.000, 50.000 e 100.000. As massas crescente, inversa e de pior caso têm seis: 100, 500, 1.000, 2.000, 5.000 e 10.000. O pior caso inclui ainda $n=200$. Os cenários degenerados são limitados a 10.000 para reduzir custo quadrático e risco de esgotamento da pilha. São 37 combinações de massa/tamanho e três versões, totalizando 111 linhas de resultados.
+
+\begin{table}[htbp]
+\centering
+\caption{Planejamento das massas e objetivo de cada cenário}
+\label{tab:massas}
+\begin{tabular}{p{3cm} p{7cm} r}
+\hline
+Cenário & Propriedade examinada & Tamanhos \\
+\hline
+Aleatório & Pivôs e posições sem ordenação inicial; valores em $[0,10n)$ & 9 \\
+Crescente & Pivô final máximo; partição degenerada com chaves distintas & 6 \\
+Decrescente & Pivô final alternando extremos após as partições & 6 \\
+Duplicados & Repetição de chaves com até $\max(1,\lfloor n/10\rfloor)$ valores possíveis & 9 \\
+Pior caso & Nova medição da massa crescente, para evidenciar o pivô final & 7 \\
+\hline
+\end{tabular}
+\par\smallskip\footnotesize Fonte: \texttt{TestDataGenerator.java} e \texttt{QuickSortComparativeStudy.java}.\normalsize
+\end{table}
+
+No gerador de duplicados, o número de valores possíveis aumenta com $n$. Portanto, ``muitos duplicados'' não significa que uma fração fixa de 90\% das posições contenha o mesmo valor, nem que todas as chaves sejam iguais. Os cenários crescente e pior caso têm entradas iguais para o mesmo tamanho, mas são medições separadas e seus tempos não precisam coincidir. Assim, a repetição do cenário não constitui uma segunda construção adversa independente para M3.
+
+\section{Calibração, medições e validação}
+
+Antes da comparação, o híbrido com pivô final é avaliado com dez candidatos a $M$: 5, 10, 15, 20, 25, 30, 40, 50, 75 e 100. Usa-se um único vetor aleatório de 1.000 elementos, semente 42: cinco aquecimentos e dez medições por candidato, escolhendo-se o menor tempo médio. A calibração não utiliza a versão com mediana-de-três nem as outras distribuições, de modo que o valor encontrado é específico da massa e da execução registrada.
+
+O procedimento de seleção compara os dez candidatos sobre \emph{cópias dos mesmos valores}; variar $M$ não altera a massa de calibração. O limiar de corte é estrito: segmentos de tamanho $M-1$ seguem para Insertion Sort, enquanto os de tamanho $M$ ainda são particionados. Fixar $M$ para H e M3 permite atribuir diferenças de comportamento à escolha do pivô, sem introduzir um limiar distinto como segunda variável experimental. Os dez tempos de calibração são médias de execuções cronometradas, não dez valores alternativos de $M$ extraídos de execuções diferentes do estudo completo.
+
+Em cada cenário/tamanho, as três versões recebem cópias dos mesmos valores. Cada versão passa por três aquecimentos e cinco execuções medidas. \texttt{System.nanoTime()} envolve somente a chamada ao método de ordenação: inclui o clone interno produzido por ele, mas exclui a cópia de entrada preparada pelo medidor, geração de dados, validação e escrita de arquivos. Os resultados são confrontados com \texttt{Arrays.sort}, que ordena vetores de inteiros em ordem crescente \cite{oracle2021}. As médias registradas para tempo e contadores são divisões inteiras das somas pelas cinco execuções; os tempos no CSV são nanossegundos, convertidos aqui para milissegundos ($1\,\mathrm{ms}=10^6\,\mathrm{ns}$).
+
+O contador de comparações inclui somente comparações entre valores, inclusive as três verificações por escolha de mediana, e não condições de laço. O contador de \emph{trocas/movimentos} inclui trocas entre índices distintos no Quicksort e deslocamentos mais inserção final no Insertion Sort; essas quantidades não representam a mesma operação física. Os dados foram transcritos dos arquivos \path{arrays_testados/calibracao_m.csv} e \path{arrays_testados/resultados.csv}. Sem o registro da carga da máquina durante os testes não se atribui significância estatística às pequenas diferenças de tempo nem se generaliza a outra plataforma.
+
+O intervalo entre duas chamadas a \texttt{System.nanoTime()} fornece duração transcorrida em nanossegundos, não uma data/hora nem tempo de CPU isolado \cite{oracle2021}. O aquecimento pode reduzir interferências de carregamento e compilação dinâmica, mas não elimina coleta de lixo, interferência de outros processos ou efeitos de cache. O projeto armazena apenas a média inteira das cinco medições, não os cinco tempos individuais nem uma estimativa de dispersão. Por isso, uma diferença pequena entre médias não autoriza afirmar que uma versão é estatisticamente mais rápida; comparações exatas de operações nas entradas determinísticas constituem evidência de natureza diferente da flutuação do tempo.
+
+\section{Procedimento e organização dos arquivos}
+
+O estudo é aplicado e comparativo, não uma simulação assintótica: os contadores descrevem a execução do código instrumentado e o cronômetro mede o tempo de parede decorrido na chamada de ordenação, \emph{não} tempo de CPU isolado. O fluxo executado foi: (1) calibrar $M$ no híbrido de pivô final; (2) gerar cada massa com semente fixa; (3) armazenar seu vetor original; (4) aquecer separadamente cada implementação; (5) executar cinco ordenações de cópias equivalentes; (6) confrontar cada saída com \texttt{Arrays.sort}; (7) calcular médias inteiras e exportar os vetores ordenados e as estatísticas. As versões são medidas sequencialmente, não em ordem aleatorizada; por isso os efeitos de aquecimento residual, coleta de lixo e carga do sistema não são controlados completamente.
+
+Dentro de \path{arrays_testados/}, cada cenário guarda entradas originais, saídas ordenadas e resumos em três subpastas próprias. A calibração está em \path{arrays_testados/calibracao_m.csv} e as 111 médias em \path{arrays_testados/resultados.csv}, com ponto e vírgula separando campos. O arquivo \path{texto/resultados_detalhados.tex} deste relatório foi gerado diretamente desse CSV pelo script \path{gerar_dados_relatorio.js}, após verificar o número de linhas, a coluna de sucesso e $M=15$. Assim, tabelas e gráficos podem ser conferidos com o mesmo registro, sem copiar números do documento de referência.
+
+O código-fonte e os testes estão disponíveis no repositório do projeto: \url{https://github.com/ramonVSCorrea/tp-1-paa-quicksort}. Os arquivos de \path{arrays_testados/} são gerados pela execução; os resultados registrados neste relatório correspondem aos CSVs da execução analisada.
+
+\section{Ambiente de execução}
+
+Os testes foram executados em um equipamento com a seguinte configuração:
+
+\begin{itemize}
+  \item Processador Intel Core i5-9300H, frequência nominal de 2,40\,GHz;
+  \item 16,0\,GB de memória RAM instalada (15,8\,GB utilizáveis);
+  \item Windows 11 Education, versão 26H2, compilação 26300.9550, em sistema operacional de 64 bits e processador x64;
+  \item Java Temurin OpenJDK 17.0.20.1 (64 bits; build 17.0.20.1+1).
+\end{itemize}

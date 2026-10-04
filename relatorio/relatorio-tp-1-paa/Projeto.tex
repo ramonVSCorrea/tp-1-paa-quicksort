@@ -1,0 +1,286 @@
+% Arquivo principal: configurar o Overleaf para pdfLaTeX + BibTeX.
+%\documentclass[a4paper,brazil,ruledheader,normaltoc,capchap]{abnt}
+
+% Para impressão frente e verso (normalização 2011)
+\documentclass[a4paper,brazil,ruledheader,normaltoc,capchap,twoside,openany]{abnt_pucmg_utf8}
+
+% Não esquecer das alterações no arquivo abnt.cls
+% Se estiver usando o Kile no Ubuntu o arquivo fica armazenado em /usr/share/texmf/tex/latex/abntex.
+% Comentar a linha 967 
+% \vspace*{30pt}% - Linha comentada para reduzir o espaçamento entre o topo da página e o título \chapter
+% Alterar a linha 1143
+% \vspace*{-30pt} % - Parâmetro alterado de 30pt para -30pt para reduzir o espaçamento entre o top da página e o título do apêndice
+% Alterar a linha 985
+%\vspace*{-30pt}\par % - Parâmetro alterado de 0pt para -30pt para reduzir o espaçamento entre o top da página e o título \chapter*
+% Alterar a linha 991
+% Parâmetro alterado de 45pt para 30pt para reduzir o espaçamento entre o texto e o título \chapter*
+
+% Não esquecer das alterações no arquivo acronym.sty
+% Se estiver usando o Kile no Ubuntu o arquivo fica armazenado em /usr/share/texmf-texlive/tex/latex/acronym
+% Alterar a linha 225
+%\item[\protect\AC@hypertarget{#1}{\acsfont{\normalfont{#2}}} --] #3% - Inserir separador entre acrônimo/descrição e remover o negrito com o normalfont
+
+% Preserva as margens efetivas da versão anterior (o template as redefinia para 1in).
+\usepackage[a4paper,margin=1in]{geometry}
+% Esta versão local de abntcite detecta hyperref no carregamento.
+\usepackage{hyperref}
+% Necessário ao ler arquivos .aux antigos produzidos pelo template.
+\usepackage[printonlyused]{acronym}
+
+%\usepackage{units}
+% Utilize da seguinte forma \unit[78,6]{mA}
+
+% Pacote para citação e referências seguindo ABNT no sistema (AUTOR, Data)
+%\usepackage[alf, bibjustif,abnt-emphasize=bf]{abntcite}
+\usepackage[alf, abnt-emphasize=em, abnt-thesis-year=title]{abntcite}
+% @article An article from a journal or magazine 
+% @inproceedings An article in a conference proceedings
+% Força que o tipo de ênfase no nome do simpósio seja em caixa alta
+\renewcommand{\emph}{\textsc}
+
+% Pacote para múltiplos arquivos .bib
+%\usepackage{multibib}
+%\newcites{pub}{Refer\^encias das publica\c{c}\~oes}
+
+% Pacote de adequação do formato ABNT para normas da PUCMinas
+\usepackage{abnt-PPGInf-PUCMG}
+
+% Pacotes utilitários
+\usepackage{graphicx}
+
+% Pacote para fixar a figura no local desejado
+\usepackage{float}
+
+\usepackage{url,amsmath}	% Permite melhorias na codificação de fórmulas
+\usepackage{xcolor}
+% Os gráficos em PDF são gerados localmente dos CSVs: sem pgfplots no Overleaf.
+%\usepackage{amsthm}		% Permite melhorias na escrita de teoremas
+\usepackage{amssymb}		% Permite utlização de simbolos matemáticos avançados
+
+\usepackage{listings} 		% para importação de código-fonte
+
+\usepackage{setspace}
+
+% Para inserir captions (nova normalização 2011)
+\usepackage[size=normalsize,labelfont=bf,textfont={bf},labelsep=endash]{caption}
+
+% Alterar para sequencial a numeração de figuras e tabelas
+\captionsetup{figurewithin=none}
+\captionsetup{tablewithin=none}
+
+% Para o subsubsection aparecer no sumário 
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+% Para criar lista de gráficos
+\floatstyle{plaintop}
+\newfloat{grafico}{H}{loq}
+\restylefloat*{grafico}
+\floatname{grafico}{Gráfico} 
+
+\renewcommand{\lstlistingname}{Código}
+\renewcommand{\lstlistlistingname}{Lista de Códigos}
+\citeoption{abnt-etal-cite=1, abnt-and-type=e}
+
+% the bibtex style generates this command, but it's not defined
+\newcommand{\optionaltextstyle}{}
+% Versão local de abntcite.sty comenta definições usadas nas citações.
+\providecommand{\authorcapstyle}{}
+\providecommand{\authorstyle}{}
+\providecommand{\yearstyle}{}
+\providecommand{\citenumstyle}{}
+
+\AtBeginDocument{
+  \renewcommand{\thelstlisting}{\arabic{lstlisting}}
+}
+
+
+
+% PRÉ-TEXTUAIS %%
+\begin{document}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize, % Fonte monoespaçada
+  numbers=left,                      % Números nas linhas
+  numberstyle=\tiny\color{gray},      % Cor dos números
+  keywordstyle=\color{blue},          % Palavras-chave em azul
+  stringstyle=\color{red},            % Strings em vermelho
+  commentstyle=\color{green!50!black},% Comentários em verde-escuro
+  morecomment=[l][\color{magenta}]{--}, % Comentários de linha do VHDL (--) em magenta
+  backgroundcolor=\color{white},      % Fundo branco
+  frame=single,                       % Moldura em volta
+  breaklines=true,                    % Quebra linha automática
+  captionpos=b,                        % Legenda embaixo
+  aboveskip=2em,
+  inputencoding=utf8,       % <-- entende acentos
+  extendedchars=true,       % <-- entende caracteres estendidos como ç, á, ã
+  literate=
+    {á}{{\'a}}1 {ã}{{\~a}}1 {â}{{\^a}}1
+    {é}{{\'e}}1 {ê}{{\^e}}1
+    {í}{{\'i}}1
+    {ó}{{\'o}}1 {ô}{{\^o}}1 {õ}{{\~o}}1
+    {ú}{{\'u}}1
+    {ç}{{\c{c}}}1
+    {Á}{{\'A}}1 {Â}{{\^A}}1 {Ã}{{\~A}}1
+    {É}{{\'E}}1 {Ê}{{\^E}}1
+    {Í}{{\'I}}1
+    {Ó}{{\'O}}1 {Ô}{{\^O}}1 {Õ}{{\~O}}1
+    {Ú}{{\'U}}1 {Ç}{{\c{C}}}1
+}
+
+% Para forçar que elementos pré-textuais (da capa até o sumário) sejam impressos no anverso da folha
+\setboolean{@twoside}{false}
+
+\autor{Ian Pereira Pinto Bomfim\\
+João Miguel de Abreu Constâncio\\
+Ramon Vinícius Silva Corrêa}
+
+% Coloque o título em caixa alta. É o padrão da PUC.
+% Vá no arquivo abnt-PPGInf-PUCMG.sty e procure por esse título (linha 575). Altere para o seu título em caixa alta. Isso será utilizado na folha de aprovação.
+\titulo{ESTUDO COMPARATIVO DE IMPLEMENTAÇÕES DO QUICKSORT}
+
+%\orientador[Orientador:]{título + nome do orientador}
+
+% Se não tiver, co-orientador, comente a próxima linha.
+%\coorientador[Co-orientador:]{Professor}
+
+% Texto
+\comentario{Relatório do Trabalho Prático de Projeto e Análise de Algoritmos apresentado à Pontifícia Universidade Católica de Minas Gerais.}
+
+\orientador{Prof. Walisson Ferreira de Carvalho}
+
+
+% Instituição
+\instituicao{Projeto e Análise de Algoritmos \par Pontifícia Universidade Católica de Minas Gerais}
+
+% Local
+\local{Belo Horizonte}
+
+% Data
+\data{2026}
+\capa
+%Para forçar que a ficha catalográfica seja impressa no verso da folha de aprovação
+\setboolean{@twoside}{true}
+
+% Gera a folha de rosto
+\folhaderosto
+
+% Ficha catalográfica
+%\include{pre-texto/ficha-catalografica}
+
+% Para forçar que elementos pré-textuais (da capa até o sumário) sejam impressos no anverso da folha
+\setboolean{@twoside}{false}
+
+% Folha de aprovação
+%\include{pre-texto/folha-aprovacao}
+
+% Dedicatória
+%\include{pre-texto/dedicatoria}
+
+% Agradecimentos
+%\include{pre-texto/agradecimentos}
+
+% Epígrafe
+%\include{pre-texto/epigrafe}
+
+% Resumo
+\include{pre-texto/resumo}
+
+% Abstract
+\include{pre-texto/abstract}
+
+\makeatletter
+\renewcommand\numberline[1]{
+	\leftskip 0em
+	\rightskip 1.6em
+	\parfillskip -\rightskip
+	\parindent 0em
+	\@tempdima 2.0em
+	\vspace{0em} \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+	FIGURA \normalfont #1 -- }
+\makeatother
+
+% Sem figuras neste relatório (os gráficos têm ambiente próprio).
+%\listoffigures
+
+\makeatletter
+\renewcommand\numberline[1]{
+	\leftskip 0em
+	\rightskip 1.6em
+	\parfillskip -\rightskip
+	\parindent 0em
+	\@tempdima 2.0em
+	\vspace{0em} \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+	TABELA \normalfont #1 -- }
+\makeatother
+
+% Lista de tabelas
+\listoftables
+
+\makeatletter
+\renewcommand\numberline[1]{
+	\leftskip 0em
+	\rightskip 1.6em
+	\parfillskip -\rightskip
+	\parindent 0em
+	\@tempdima 2.0em
+	\vspace{0.5em} \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+	GRÁFICO \normalfont #1 -- }
+\makeatother
+
+% Lista dos gráficos comparativos por cenário
+\listof{grafico}{Lista de Gráficos}
+
+% Lista de siglas
+%\input{pre-texto/lista-siglas.tex}
+
+\makeatletter
+\renewcommand\numberline[1]{#1\hspace{0.8em}}
+\makeatother
+
+% Altera para espaçamento simples a partir daqui
+\singlespacing
+
+% Sumário
+\tableofcontents
+
+% Altera para espaçamento 1,5 a partir daqui
+\onehalfspacing
+
+%% TEXTUAIS 
+% Para forçar que elementos textuais e pós-textuais sejam impressos no anverso e verso das folhas
+\setboolean{@twoside}{true}
+% Altere o número da página para o correto. Conte todas as páginas frente e verso, menos a capa, nclusive a ficha catalográfica até a página do primeiro capítulo.
+\setcounter{page}{1}
+
+% Capítulos
+% Para forçar que o capítulo de introdução comece no anverso
+\setboolean{@openright}{true}
+\include{texto/introducao}
+% Os demais capítulos não precisam começar no anverso
+\setboolean{@openright}{false}
+\include{texto/desenvolvimento}
+\include{texto/metodologia}
+\include{texto/analise_algoritmos}
+\include{texto/resultados}
+\include{texto/conclusao}
+% PÓS-TEXTUAIS %%
+% Bibliografia no arquivo 'Dissertacao.bib'
+% Alterar o título das referências para somente 'Referências'
+%\renewcommand{\bibname}{Referências}
+\bibliographystyle{abnt-alf}
+\bibliography{Referencias}
+
+
+% Para forçar que os apêndices e anexos comecem no anverso
+%\setboolean{@openright}{true}
+
+%\apendice
+%\begin{apendice}
+%\include{pos-texto/apendiceA}
+%\end{apendice}
+
+%\anexo
+%\include{pos-texto/anexo}
+
+\end{document}

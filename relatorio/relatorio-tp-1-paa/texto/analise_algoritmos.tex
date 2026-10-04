@@ -1,0 +1,109 @@
+\chapter{Análise das implementações}
+\label{cap:algoritmos}
+
+Esta análise associa o custo teórico às condições e aos contadores do \emph{código efetivamente executado}. Os trechos seguintes são recortes representativos das classes Java do projeto; nomes e testes preservam a lógica original. Em todas as versões, o método público retorna uma cópia do vetor, custo adicional $\Theta(n)$ de tempo e espaço, já incluído no relógio. A partição propriamente dita é local ao clone; logo, não se deve confundir espaço auxiliar da partição ($O(1)$) com espaço total desta API ($O(n)$ mais a pilha).
+
+\section{Insertion Sort para subvetores pequenos}
+
+O algoritmo mantém o prefixo anterior à posição atual ordenado. Para cada chave, desloca os predecessores estritamente maiores; a comparação estrita preserva a ordem relativa entre iguais. O Código~\ref{cod:insercao} destaca a contagem exata usada no projeto: a comparação entre valores ocorre a cada iteração interna não interrompida pelo limite esquerdo; só há incremento do contador de movimentos se há deslocamento ou inserção em índice diferente.
+
+\begin{lstlisting}[language=Java,caption={Operações centrais de InsertionSort.java},label={cod:insercao}]
+for (int currentIndex = low + 1; currentIndex <= high; currentIndex++) {
+    int valueToInsert = array[currentIndex];
+    int comparisonIndex = currentIndex - 1;
+    while (comparisonIndex >= low) {
+        metrics.incrementComparisons();
+        if (array[comparisonIndex] > valueToInsert) {
+            array[comparisonIndex + 1] = array[comparisonIndex];
+            metrics.incrementSwaps(); // deslocamento, nao troca
+            comparisonIndex--;
+        } else break;
+    }
+    if (comparisonIndex + 1 != currentIndex) {
+        array[comparisonIndex + 1] = valueToInsert;
+        metrics.incrementSwaps(); // insercao final
+    }
+}
+\end{lstlisting}
+
+Se $s_i$ for o número de predecessores maiores deslocados ao inserir a $i$-ésima chave, o contador de movimentos cresce em $s_i+\mathbf{1}_{s_i>0}$. O número de comparações entre valores é $s_i+1$ se houver um predecessor final não deslocado, ou $s_i$ quando o início do segmento é alcançado. Para um subvetor de $m$ elementos crescente, são $m-1$ comparações e zero movimentos contados; para o inverso, há $m(m-1)/2$ comparações e $m(m-1)/2+(m-1)$ movimentos. Essas contagens decorrem da instrumentação mostrada no Código~\ref{cod:insercao}; o custo médio e o pior caso do Insertion Sort para um subvetor arbitrário são $\Theta(m^2)$ \cite{cormen2012}.
+
+Em uma permutação uniforme de $m$ chaves distintas, cada par está invertido com probabilidade $1/2$; pela linearidade da esperança, o número esperado de deslocamentos da inserção é $m(m-1)/4$ \cite{gfg_insertion_complexity}. Os testes finais que interrompem o laço e as inserções após deslocamentos acrescentam no máximo $O(m)$ operações. Essa dedução explica a ordem média quadrática sem equiparar o número de deslocamentos ao de trocas de posições do Quicksort. Quando o algoritmo atua apenas sobre blocos de comprimento inferior a $M$, a mesma análise vale em cada bloco, não automaticamente para o vetor inteiro como se ele fosse ordenado apenas por inserção.
+
+\section{Quicksort recursivo com pivô final}
+
+A partição do Código~\ref{cod:particao} compara cada um dos $m-1$ elementos não pivôs com o valor final. O índice de partição avança somente quando a condição $\leq$ é satisfeita. Trocas com índices idênticos são ignoradas, inclusive a troca final se o pivô já estiver na posição correta. Após colocar o pivô, são realizadas chamadas nos intervalos estritamente à esquerda e à direita de sua posição definitiva.
+
+\begin{lstlisting}[language=Java,caption={Partição usada por RecursiveQuickSort.java e HybridQuickSort.java},label={cod:particao}]
+int pivotValue = array[high];
+int partitionIndex = low - 1;
+for (int currentIndex = low; currentIndex < high; currentIndex++) {
+    metrics.incrementComparisons();
+    if (array[currentIndex] <= pivotValue) {
+        partitionIndex++;
+        swap(array, partitionIndex, currentIndex, metrics);
+    }
+}
+swap(array, partitionIndex + 1, high, metrics);
+return partitionIndex + 1;
+\end{lstlisting}
+
+Para uma partição em $k$ elementos à esquerda, a recorrência dos custos de ordenação é
+\begin{equation}
+ T(n)=T(k)+T(n-k-1)+a(n-1)+b,\qquad T(0),T(1)=\Theta(1),
+ \label{eq:quick}
+\end{equation}
+para constantes $a,b>0$. No melhor padrão de partições, $k\simeq(n-1)/2$, obtém-se $\Theta(n\log n)$. Sob uma permutação aleatória de chaves distintas e pivô fixo no fim, a posição do pivô é uniforme entre as posições possíveis; portanto o número esperado de comparações também é $\Theta(n\log n)$ \cite{cormen2012}. Já quando $k=0$ ou $k=n-1$ repetidamente, a contagem do código é exata:
+\begin{equation}
+ C_{\mathrm{R}}(n)=\sum_{m=2}^{n}(m-1)=\frac{n(n-1)}{2}=\Theta(n^2).
+ \label{eq:quadratico}
+\end{equation}
+É precisamente o que ocorre na massa crescente de chaves distintas, e também no inverso com esta partição. Na crescente, os testes são verdadeiros mas as posições trocadas são idênticas; isso justifica simultaneamente milhões de comparações e zero trocas efetivas. A versão recursiva não elimina recursão de cauda nem impõe profundidade máxima: sua pilha alcança $\Theta(n)$ nessas entradas.
+
+Para uma permutação uniforme de $n$ chaves \emph{distintas}, cada posição final possível do pivô é igualmente provável. Se $E[C(n)]$ é a esperança de comparações entre valores na versão recursiva, a partição de Lomuto e a distribuição uniforme das subpermutações dão
+\begin{equation}
+ E[C(n)]=n-1+\frac{2}{n}\sum_{k=0}^{n-1}E[C(k)],\qquad E[C(0)]=E[C(1)]=0.
+ \label{eq:medioquick}
+\end{equation}
+Resolvendo a Equação~\ref{eq:medioquick}, obtém-se $E[C(n)]=2(n+1)H_n-4n$, com $H_n=\sum_{i=1}^{n}1/i$, que cresce como $\Theta(n\log n)$. Essa expressão exata é deduzida da recorrência acima, enquanto a análise do crescimento esperado do Quicksort é discutida por \citeonline{cormen2012}. A fórmula não descreve literalmente o gerador de aleatórios do experimento, que admite valores repetidos, nem a mediana-de-três, cujo pivô não tem a mesma distribuição uniforme. Ela serve de referência teórica para interpretar a escala observada sem ajustar uma lei exata aos pontos do CSV.
+
+\section{Quicksort híbrido e efeito do limiar}
+
+O Código~\ref{cod:corte} mostra a condição \texttt{subarraySize < threshold}, que envia segmentos de até $M-1$ elementos à inserção. Portanto, \textbf{tamanho igual a $M$ ainda é particionado}, ao contrário de variantes que usam $\leq M$. O teste só é alcançado em segmentos com ao menos dois elementos. Com $M=15$ e a massa crescente, a recursão vai de $n$ até 15, seguida pela inserção de um bloco crescente de 14 elementos. Em particular, o total de comparações H é
+\begin{equation}
+ C_{\mathrm{H}}(n)=\sum_{m=15}^{n}(m-1)+13
+ =\frac{n(n-1)}{2}-78,\quad n\geq15.
+ \label{eq:hibridocrescente}
+\end{equation}
+Para $n=10.000$, a equação fornece 49.994.922, exatamente o CSV. Quando as partições são aproximadamente equilibradas, há $O(\log(n/M))$ níveis. A soma das partições custa $O(n\log(n/M))$; os blocos finais de menos de $M$ elementos custam, em agregado, $O(nM)$ no pior caso local. Com $M$ constante, a ordem usual segue $O(n\log n)$, mas partições repetidamente degeneradas mantêm $\Theta(n^2)$. A fórmula por níveis não deve ser aplicada ao caso degenerado como se os blocos fossem equilibrados.
+
+\begin{lstlisting}[language=Java,caption={Condição de corte em HybridQuickSort.java},label={cod:corte}]
+int subarraySize = high - low + 1;
+if (subarraySize < threshold) {
+    InsertionSort.sort(array, low, high, metrics);
+} else {
+    int pivotIndex = partition(array, low, high, metrics);
+    quickSort(array, low, pivotIndex - 1, metrics);
+    quickSort(array, pivotIndex + 1, high, metrics);
+}
+\end{lstlisting}
+
+\section{Quicksort híbrido com mediana-de-três}
+
+O Código~\ref{cod:mediana} mostra a seleção real: comparam-se primeiro e meio, meio e último, primeiro e meio outra vez, rearranjando os três candidatos quando necessário. O índice central contém então o valor mediano, que é movido para o fim antes da mesma partição anterior. Cada partição dessa versão acrescenta exatamente três comparações de candidatos às $m-1$ comparações de partição, além das eventuais trocas de escolha e reposicionamento. Isso permite comparar os contadores sem supor que a mediana é gratuita.
+
+\begin{lstlisting}[language=Java,caption={Escolha do pivô em ImprovedHybridQuickSort.java},label={cod:mediana}]
+int midIndex = low + (high - low) / 2;
+metrics.incrementComparisons();
+if (array[low] > array[midIndex]) swap(array, low, midIndex, metrics);
+metrics.incrementComparisons();
+if (array[midIndex] > array[high]) swap(array, midIndex, high, metrics);
+metrics.incrementComparisons();
+if (array[low] > array[midIndex]) swap(array, low, midIndex, metrics);
+swap(array, midIndex, high, metrics);
+int partitionIndex = partition(array, low, high, metrics);
+\end{lstlisting}
+
+Na entrada originalmente crescente, os três candidatos iniciais representam aproximadamente mínimo, valor central e máximo. A mediana evita o máximo como primeiro pivô, o que explica o ganho empírico, mas as demais partições dependem do rearranjo produzido, não de uma garantia de divisão sempre ao meio. A recorrência continua com a forma da Equação~\ref{eq:quick}, acrescida de $O(1)$ por escolha de pivô e do caso-base de inserção. O pior caso assintótico permanece $\Theta(n^2)$: por exemplo, quando todos os elementos são iguais, a mediana também é igual e a partição com $\leq$ concentra quase todos os elementos de um lado. Não se implementou partição em três vias nem mecanismo de limite de profundidade; a possibilidade de partições desequilibradas permanece mesmo com a escolha de pivô aprimorada \cite{gfg_quick}.
+
+Esse último exemplo também separa dois sentidos de ``pior caso'': o ensaio crescente força o pior caso da \emph{escolha do último elemento como pivô} em R e H, enquanto o vetor de chaves todas iguais ilustra um pior caso possível também para M3. O experimento principal não mede essa segunda massa; não se deve inferir do bom desempenho de M3 na crescente uma garantia de desempenho $O(n\log n)$ em todas as entradas. Tampouco o menor número de comparações de M3 em determinado cenário implica sempre menor tempo, pois há o custo de seleção do pivô, movimentos e efeitos da máquina.

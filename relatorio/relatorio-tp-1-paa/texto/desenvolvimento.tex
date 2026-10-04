@@ -1,0 +1,43 @@
+\chapter{Referencial teórico}
+\label{cap:desenvolvimento}
+
+\section{Ordenação por inserção}
+
+O Insertion Sort percorre um vetor da esquerda para a direita, deslocando valores maiores que a chave corrente até abrir espaço para sua inserção. É estável em sua forma usual e pode operar com espaço auxiliar constante. Com $n$ elementos em ordem crescente, cada chave exige apenas uma comparação relevante e o trabalho é $\Theta(n)$; em ordem inversa, os deslocamentos somam $\sum_{i=1}^{n-1}i=n(n-1)/2$, produzindo $\Theta(n^2)$ em tempo e comparações. Em vetores pequenos, entretanto, o laço simples e a baixa sobrecarga justificam seu emprego como caso-base de algoritmos híbridos \cite{gfg_insertion,gfg_insertion_complexity}.
+
+Por exemplo, ao inserir sucessivamente as chaves de $[5,2,4,1]$, os prefixos ordenados passam por $[2,5,4,1]$, $[2,4,5,1]$ e $[1,2,4,5]$. A chave $1$ desloca três predecessores; na convenção adotada no código, isso representa três deslocamentos e uma inserção final, não quatro trocas entre pares. O prefixo só é alterado quando há um predecessor estritamente maior: elementos iguais não são deslocados pela inserção. A ordenação por inserção isolada tem custo médio quadrático sob permutações aleatórias de chaves distintas e, no melhor caso, usa $n-1$ comparações entre valores.
+
+\section{Quicksort e seleção do pivô}
+
+O Quicksort escolhe um pivô, particiona os demais valores em torno dele e ordena recursivamente as duas regiões. Para uma partição linear, a recorrência é $T(n)=T(k)+T(n-k-1)+\Theta(n)$. Partições próximas da metade dão $\Theta(n\log n)$; partições com uma região vazia dão $T(n)=T(n-1)+\Theta(n)=\Theta(n^2)$. Para entradas aleatórias sob hipóteses usuais de distribuição, o número esperado de operações é $\Theta(n\log n)$. A pilha recursiva requer $O(\log n)$ espaço em partições equilibradas e pode alcançar $O(n)$ em partições degeneradas \cite{cormen2012,gfg_quick}.
+
+Neste trabalho, a partição de Lomuto usa o último valor como pivô e encaminha valores menores \emph{ou iguais} para a esquerda. Assim, uma entrada crescente com valores distintos põe sempre o maior valor no fim: as comparações são exatamente $\sum_{i=1}^{n-1}i=n(n-1)/2$. Na entrada decrescente, o pivô alterna entre extremos, ainda produzindo partições desbalanceadas. Elementos todos iguais também se concentram à esquerda, revelando uma limitação da partição em duas vias.
+
+Uma partição concreta esclarece a diferença entre ordenar o vetor e posicionar apenas o pivô. Em $[4,1,3,2]$, o pivô final é $2$: a varredura encontra $1\leq2$, coloca-o à esquerda e, ao final, posiciona $2$ após $1$. O vetor resultante dessa partição é $[1,2,3,4]$ neste exemplo particular; em geral, as duas regiões ainda precisam das chamadas recursivas. Foram realizadas três comparações com o pivô nessa partição. Para $[1,2,3,4]$, por outro lado, o pivô $4$ já está no extremo correto; a primeira partição deixa uma região de três elementos e outra vazia, repetindo o desbalanceamento até chegar a um elemento.
+
+\section{Hibridização e escolha do pivô}
+
+Substituir por Insertion Sort a recursão em partições de tamanho menor que $M$ reduz a sobrecarga para pequenos segmentos, mas não altera o pivô das partições grandes. Por isso, isoladamente, a hibridização não remove o pior caso $\Theta(n^2)$. A mediana-de-três escolhe o valor intermediário entre as posições inicial, central e final; tende a evitar pivôs extremos em dados crescentes ou decrescentes, mas tampouco garante partições equilibradas para toda entrada, em especial quando há muitos valores iguais. O emprego de Insertion Sort em segmentos pequenos e o impacto da escolha do pivô são discutidos em \cite{gfg_insertion,gfg_quick}; a limitação com chaves iguais decorre da partição usada neste projeto.
+
+Na implementação estudada, os candidatos são \emph{valores} das posições primeira, central e última, e não a média aritmética deles. Em $[9,4,5,7,1]$, por exemplo, a mediana dos candidatos $9$, $5$ e $1$ é $5$; depois de rearranjá-los, o código leva essa mediana à posição final para reutilizar a mesma partição. Trata-se de uma ilustração da escolha do pivô: com o $M=15$ medido neste estudo, um vetor de apenas cinco elementos seria ordenado diretamente por Insertion Sort, sem executar a seleção por mediana. A comparação real entre H e M3 mantém o mesmo limiar; diferenças entre essas versões decorrem da estratégia de pivô nas partições que chegam a ser executadas.
+
+O livro de \citeonline{ziviani2011} apresenta métodos clássicos de ordenação, entre eles a inserção e o Quicksort. Para o esquema concreto examinado aqui, \citeonline{gfg_quick} descreve a partição de Lomuto com pivô final e a degradação quando as partições são desequilibradas. A condição $\leq$ do código apresentado no Capítulo~\ref{cap:algoritmos} também encaminha valores iguais ao pivô para um mesmo lado. Essas observações motivam as duas mudanças avaliadas neste trabalho, mas não asseguram pior caso $O(n\log n)$ para a implementação estudada.
+
+\begin{table}[htbp]
+\centering
+\caption{Custos assintóticos esperados e limites relevantes para este estudo}
+\label{tab:complexidades}
+\begin{tabular}{l c c c}
+\hline
+Algoritmo & Melhor caso & Caso médio usual & Pior caso \\
+\hline
+Insertion Sort (isolado) & $\Theta(n)$ & $\Theta(n^2)$ & $\Theta(n^2)$ \\
+Quicksort recursivo & $\Theta(n\log n)$ & $\Theta(n\log n)$ & $\Theta(n^2)$ \\
+Híbrido, $M$ constante & $\Theta(n\log n)$ & $\Theta(n\log n)$ & $\Theta(n^2)$ \\
+Híbrido com mediana, $M$ constante & $\Theta(n\log n)$ & $\Theta(n\log n)$ & $\Theta(n^2)$ \\
+\hline
+\end{tabular}
+\par\smallskip\footnotesize Fonte: análise do código; caso médio sob condições usuais de entradas aleatórias.\normalsize
+\end{table}
+
+Para as três versões de Quicksort, a partição ocupa espaço auxiliar constante, mas a API clona o vetor ($\Theta(n)$ de espaço) e a pilha recursiva pode chegar a $\Theta(n)$ em partições degeneradas. Na forma equilibrada, a pilha requer $\Theta(\log n)$. As ordens da tabela descrevem o crescimento com $n$ e $M$ fixo: uma redução em comparações numa massa específica não muda, por si só, o limite de pior caso do algoritmo.

@@ -1,0 +1,8 @@
+% English abstract matching the Portuguese resumo and the recorded experiment.
+\begin{abstract}
+\vspace{-1cm}
+\onehalfspacing
+This report compares three Java implementations of Quicksort: a recursive version using the last element as pivot, a hybrid version using Insertion Sort on small subarrays, and a hybrid version using median-of-three pivot selection. The cutoff threshold $M$ was calibrated on 1,000 random values. The implementations were evaluated on random, ascending, descending, and duplicate-rich arrays, as well as an explicit worst-case scenario for the last-element pivot. Each configuration included warm-up runs and five measured executions, recording elapsed time, value comparisons, and swaps/movements. The recorded calibration selected $M=15$. On 10,000 ascending values, recursive Quicksort performed 49,995,000 comparisons, compared with 108,986 for the median-of-three version. On 100,000 random values, the latter took 11.115 ms, compared with 14.458 ms for the recursive version. Median-of-three selection substantially improved performance on the ordered inputs examined, but it neither outperformed the other versions on every input nor eliminated the theoretical worst case.
+\par\vspace*{.75cm}
+\noindent \textbf{Keywords:} Quicksort. Insertion Sort. Median-of-three. Experimental analysis.
+\end{abstract}
