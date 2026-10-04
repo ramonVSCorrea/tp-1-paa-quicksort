@@ -200,4 +200,4 @@ O terminal arredonda os tempos para **três casas decimais em milissegundos**. S
 <a id="escopo-da-entrega"></a>
 ## 📚 Escopo da entrega
 
-Este repositório contém o **código, os testes e os arquivos gerados pelo experimento**. O [relatório no Overleaf](https://www.overleaf.com/read/gtjvwsdwthbf#6c921e) apresenta o referencial teórico, as tabelas, os gráficos, a análise crítica, a conclusão e as referências. O relatório e os links entregues no **Canvas** são partes separadas do trabalho; **não são gerados automaticamente** por este programa.
+Este repositório contém o **código, os testes e os arquivos gerados pelo experimento**. O [relatório no Overleaf](https://www.overleaf.com/read/gtjvwsdwthbf#6c921e) apresenta o referencial teórico, as tabelas, os gráficos, a análise crítica, a conclusão e as referências.
